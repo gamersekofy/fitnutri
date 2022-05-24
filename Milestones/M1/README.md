@@ -25,6 +25,11 @@ The high level purpose is for student teams to choose, install and prepare IT in
 (a) Brainstorming ideas for your project 
 
 (b) Configuring GitHub to enable team SW development
-Once the team agrees with the final idea for the project, choosing a SW stack and delivery platform and service provider from given list
+
+(c) Once the team agrees with the final idea for the project, choosing a SW stack and delivery platform and service provider from given list
 Getting your choices from above approved by Class Instructor
-Creating a joint WWW page with info about team members using above infrastructure (this page will be graded but will also serve as ABOUT page for your team application)
+
+(d) Creating a joint WWW page with info about team members using above infrastructure (this page will be graded but will also serve as ABOUT page for your team application)
+
+
+### More details about checkpoint #1 and checkpoint #2 can be found in the official milestone 1 document posted on iLearn. 

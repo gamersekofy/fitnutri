@@ -1,8 +1,8 @@
 # Milestone 1 
 
-## This document contains general info about checkpoint #1 and checkpoint #2
+This document contains general info about checkpoint #1 and checkpoint #2
 
-Checkpoint #1 General Objectives: 
+## Checkpoint #1 General Objectives: 
 
 a) initial high-level personas and use cases 
 
@@ -16,5 +16,15 @@ Initial input for your work is the instructor guidance, class slides on the topi
 
 This is the first team milestone. The whole student team submits one milestone document for each Milestone 1 – 5, submission details are below.
 
-You will discuss ongoing work on Milestone 1 during team session in each class, and you can also send e-mail to instructor with questions. Document formatting (page numbers, table of contents, each section starts in a new page….) is really important when you submit technical documentation like the one in M1. 
+You will discuss ongoing work on Milestone 1 during team session in each class, and you can also send e-mail to instructor with questions. Document formatting (page numbers, table of contents, each section starts in a new page….) is really important when you submit technical documentation like the one in M1.  
 
+## Checkpoint #2 General Objectives: 
+
+The high level purpose is for student teams to choose, install and prepare IT infrastructure for the development of  team final project in CSC 648-848. Specifically, in M1 must achieve the following objectives working together:
+
+(a) Brainstorming ideas for your project 
+
+(b) Configuring GitHub to enable team SW development
+Once the team agrees with the final idea for the project, choosing a SW stack and delivery platform and service provider from given list
+Getting your choices from above approved by Class Instructor
+Creating a joint WWW page with info about team members using above infrastructure (this page will be graded but will also serve as ABOUT page for your team application)

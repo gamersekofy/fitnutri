@@ -1,3 +1,3 @@
 # Milestones Folder
 
-## This folder is used to store all the necessary documents for each milestone. Some folders may be empty because certain milestones may not contain or need any documents. But certain milestones will required documents to be submitted and then links sent via email to the instructors. These documents should go here in the corresponding folder.
+## This folder is used to store all the necessary documents for each milestone. Each milestone folder (witht he only exception of milestone5 folder) will contain two milestone documents plus their protototypes (if any). The first version of each milestone is your original submission (version 1). After the instructor feedback, teams will have to create an additional document (version 2) to revise the feedback from the instructor related to that specific milestone.

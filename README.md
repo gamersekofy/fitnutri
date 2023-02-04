@@ -6,7 +6,7 @@
 
 2. Replace the username of this repository by your team number. Use the following format TNN where NN is the two digits of your team number. For instance, T03 for team 3. 
 
-2. Add ***ALL members*** of your team to this repository. For it to count, they must ACCEPT the invite.
+2. Add ***ALL members*** of your team to this repository. For it to count, they must ACCEPT the invite. The team lead or/and Github master are the only members of the team that can have admin permissions for this repository. 
 
 3. Fill out the table below. Note that roles are not yet defined for members of the team, they can be added later on. However, the fields of "Student name", "Student Email", and "Github Username" are mandatory to be completed the same day the repository is created. 
 

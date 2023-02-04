@@ -23,7 +23,7 @@
 
 4. All the team members must sign the team contract found [here](https://forms.gle/PoTXjTmPGGKKZjsT6). Missing signatures from students will result in these students being dropped from the course since this means that they disagree with the policies and terms needed to work in a term environment. 
 
-4. Please when ready, add your teams application's name and URL or IP to the following table. This will help with grading. Teams are expected to keep this value up to date.
+4. Please when ready, add your application's name and URL or IP to the following table. It is the responsability of the team lead to keep this up to date 
 
 |             Name of the Project               |                            URL of the Project                          | 
 |                    :---:                      |                                 :---:                                  |

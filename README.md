@@ -13,12 +13,12 @@
 
 | Student Name | Student SFSU Email | GitHub Username | Discord Username   |        Role         |
 |    :---:     |        :---:       |     :---:       |        :---:       |        :---:        | 
-|       #1     |                    |                 |                    |      Team Lead      |
-|              |                    |                 |                    |                     |
-|              |                    |                 |                    |                     |
-|              |                    |                 |                    |                     |
-|              |                    |                 |                    |                     |
-|              |                    |                 |                    |                     |
+|      #1      |                    |                 |                    |      Team Lead      |
+|      #2      |                    |                 |                    |                     |
+|      #3      |                    |                 |                    |                     |
+|      #4      |                    |                 |                    |                     |
+|      #5      |                    |                 |                    |                     |
+|      #6      |                    |                 |                    |                     |
 
 
 4. All the team members must sign the team contract found [here](https://forms.gle/PoTXjTmPGGKKZjsT6). Missing signatures from students will result in these students being dropped from the course since this means that they disagree with the policies and terms needed to work in a term environment. 

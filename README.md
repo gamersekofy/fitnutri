@@ -13,7 +13,7 @@
 
 | Student      | Student Full Name |Student SFSU Email | GitHub Username | Discord Username   |        Role         |
 |    :---:     |   :---:           |       :---:       |     :---:       |        :---:       |        :---:        | 
-|      #1      |                   |                   |                 |                    |      Team Lead      |
+|      #1      |                   |                   |                 |                    |        Lead         |
 |      #2      |                   |                   |                 |                    |                     |
 |      #3      |                   |                   |                 |                    |                     |
 |      #4      |                   |                   |                 |                    |                     |

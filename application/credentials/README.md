@@ -1,4 +1,4 @@
-In this file, write all the credentials needed to access to your application. For example, your app and database credentials. 
+In this file, write all the credentials needed to access to your application. For example, your app and database credentials.
 This information will be used by your CTO and leads to have access some components of your app. 
 
 In addition, you should provide short tutorials to teach people how to access to all the 

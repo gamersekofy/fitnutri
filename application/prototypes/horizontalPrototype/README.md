@@ -1,1 +1,0 @@
-All your code for the horizontal prototype of your software product must be hosted in this directory. 

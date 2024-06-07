@@ -15,7 +15,7 @@
 
 | Student      | Student Full Name |Student SFSU Email | GitHub Username |  Discord Username  |           Role           |
 |    :---:     |   :---:           |       :---:       |     :---:       |        :---:       |          :---:           | 
-|      #1      |                   |                   |                 |                    |       Team-lead          |
+|      #1      |   Michelle Nguyen | mnguyen62@sfsu.edu| michenguyen7  |     trulymelle       |       Team-lead          |
 |      #2      |                   |                   |                 |                    |       Frontend-lead      |
 |      #3      |                   |                   |                 |                    |       Backend-lead       |
 |      #4      |                   |                   |                 |                    |       Database-admin     |

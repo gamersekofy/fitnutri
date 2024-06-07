@@ -20,7 +20,7 @@
 |      #3      |                   |                   |                 |                    |       Backend-lead       |
 |      #4      |                   |                   |                 |                    |       Database-admin     |
 |      #5      |                   |                   |                 |                    |       Github-master      |
-|      #6      |                   |                   |                 |                    |       Docs-editor        |
+|      #6      |   Shreejana Bartaula                |  sbartaula@mail.sfsu.edu                 |  barshrijana               |      shree2024              |       Docs-editor        |
 
 
 4. All the team's members ***MUST*** sign the follwing [team's contract](https://forms.gle/dxATAsa9isXKbcBn7). Missing signatures from students will result in these students being dropped from the course. 

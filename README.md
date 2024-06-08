@@ -16,8 +16,8 @@
 | Student      | Student Full Name |Student SFSU Email | GitHub Username |  Discord Username  |           Role           |
 |    :---:     |   :---:           |       :---:       |     :---:       |        :---:       |          :---:           | 
 |      #1      |   Michelle Nguyen | mnguyen62@sfsu.edu| michenguyen7  |     trulymelle       |       Team-lead          |
-|      #2      |                   |                   |                 |                    |       Frontend-lead      |
-|      #3      |                   |                   |                 |                    |       Backend-lead       |
+|      #2      |         Mitchell Caine          |    mcaine@sfsu.edu    |     MitCaine            |       linaeus             |       Frontend-lead      |
+|      #3      |         Sid          |                   |                 |                    |       Backend-lead       |
 |      #4      | Eduardo Enrique Munoz Alvarez |    emunozalvarez@sfsu.edu |       Smvckerz   |        Smvckerz     |       Database-admin     |
 |      #5      |     Ali Almusawi              |        aalmusawi@mail.sfsu.edu           |       Aliglore          |         Alipure           |       Github-master      |
 |      #6      |   Shreejana Bartaula                |  sbartaula@mail.sfsu.edu                 |  barshrijana               |      shree2024              |       Docs-editor        |

@@ -17,10 +17,12 @@
 |    :---:     |   :---:           |       :---:       |     :---:       |        :---:       |          :---:           | 
 |      #1      |   Michelle Nguyen | mnguyen62@sfsu.edu| michenguyen7  |     trulymelle       |       Team-lead          |
 |      #2      |         Mitchell Caine          |    mcaine@sfsu.edu    |     MitCaine            |       linaeus             |       Frontend-lead      |
-|      #3      |         Sid          |                   |        SidPad03          |         sid1918           |       Backend-lead       |
+|      #3      |         Sid  Padmanabhuni       |                   |        SidPad03          |         sid1918           |       Backend-lead       |
 |      #4      | Eduardo Enrique Munoz Alvarez |    emunozalvarez@sfsu.edu |       Smvckerz   |        Smvckerz     |       Database-admin     |
 |      #5      |     Ali Almusawi              |        aalmusawi@mail.sfsu.edu           |       Aliglore          |         Alipure           |       Github-master      |
 |      #6      |   Shreejana Bartaula                |  sbartaula@mail.sfsu.edu                 |  barshrijana               |      shree2024              |       Docs-editor        |
+|      #7      |        Nilofar Ali          |        nmohammadali@sfsu.edu         |        niloali         |          N3lly.1          |     Backend-Supporter and Project Tracker     |
+
 
 
 4. All the team's members ***MUST*** sign the follwing [team's contract](https://forms.gle/dxATAsa9isXKbcBn7). Missing signatures from students will result in these students being dropped from the course. 

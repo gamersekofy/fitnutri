@@ -21,7 +21,7 @@
 |      #4      | Eduardo Enrique Munoz Alvarez |    emunozalvarez@sfsu.edu |       Smvckerz   |        Smvckerz     |       Database-admin     |
 |      #5      |     Ali Almusawi              |        aalmusawi@mail.sfsu.edu           |       Aliglore          |         Alipure           |       Github-master      |
 |      #6      |   Shreejana Bartaula                |  sbartaula@mail.sfsu.edu                 |  barshrijana               |      shree2024              |       Docs-editor        |
-|      #7      |        Nilofar Ali          |        nmohammadali@sfsu.edu         |        niloali         |          N3lly.1          |     Backend-Supporter and Project Tracker     |
+|      #7      |        Nilofar Ali          |        nmohammadali@mail.sfsu.edu         |        niloali         |          N3lly.1          |     Backend-Supporter and Project Tracker     |
 
 
 

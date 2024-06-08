@@ -19,7 +19,7 @@
 |      #2      |                   |                   |                 |                    |       Frontend-lead      |
 |      #3      |                   |                   |                 |                    |       Backend-lead       |
 |      #4      | Eduardo Enrique Munoz Alvarez |    emunozalvarez@sfsu.edu |       Smvckerz   |        Smvckerz     |       Database-admin     |
-|      #5      |                   |                   |                 |                    |       Github-master      |
+|      #5      |     Ali Almusawi              |        aalmusawi@mail.sfsu.edu           |       Aliglore          |         Alipure           |       Github-master      |
 |      #6      |   Shreejana Bartaula                |  sbartaula@mail.sfsu.edu                 |  barshrijana               |      shree2024              |       Docs-editor        |
 
 

@@ -18,7 +18,7 @@
 |      #1      |   Michelle Nguyen | mnguyen62@sfsu.edu| michenguyen7  |     trulymelle       |       Team-lead          |
 |      #2      |                   |                   |                 |                    |       Frontend-lead      |
 |      #3      |                   |                   |                 |                    |       Backend-lead       |
-|      #4      |                   |                   |                 |                    |       Database-admin     |
+|      #4      | Eduardo Enrique Munoz Alvarez |    emunozalvarez@sfsu.edu |       Smvckerz   |        Smvckerz     |       Database-admin     |
 |      #5      |                   |                   |                 |                    |       Github-master      |
 |      #6      |   Shreejana Bartaula                |  sbartaula@mail.sfsu.edu                 |  barshrijana               |      shree2024              |       Docs-editor        |
 

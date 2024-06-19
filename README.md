@@ -17,11 +17,10 @@
 |    :---:     |   :---:           |       :---:       |     :---:       |        :---:       |          :---:           | 
 |      #1      |   Michelle Nguyen | mnguyen62@sfsu.edu| michenguyen7  |     trulymelle       |       Team-lead          |
 |      #2      |         Mitchell Caine          |    mcaine@sfsu.edu    |     MitCaine            |       linaeus             |       Frontend-lead      |
-|      #3      |         Sid  Padmanabhuni       |    spadmanabhuni@sfsu.edu                |        SidPad03          |         sid1918           |       Backend-lead       |
-|      #4      | Eduardo Enrique Munoz Alvarez |    emunozalvarez@sfsu.edu |       Smvckerz   |        Smvckerz     |       Database-admin     |
-|      #5      |     Ali Almusawi              |        aalmusawi@mail.sfsu.edu           |       Aliglore          |         Alipure           |       Github-master      |
-|      #6      |   Shreejana Bartaula                |  sbartaula@mail.sfsu.edu                 |  barshrijana               |      shree2024              |       Docs-editor        |
-|      #7      |        Nilofar Ali          |        nmohammadali@mail.sfsu.edu         |        niloali         |          N3lly.1          |     Backend-Supporter and Project Tracker     |
+|      #3     | Eduardo Enrique Munoz Alvarez |    emunozalvarez@sfsu.edu |       Smvckerz   |        Smvckerz     |       Database-admin     |
+|      #4      |     Ali Almusawi              |        aalmusawi@mail.sfsu.edu           |       Aliglore          |         Alipure           |       Github-master      |
+|      #5      |   Shreejana Bartaula                |  sbartaula@mail.sfsu.edu                 |  barshrijana               |      shree2024              |       Docs-editor        |
+|      #6     |        Nilofar Ali          |        nmohammadali@mail.sfsu.edu         |        niloali         |          N3lly.1          |     Backend-Supporter and Project Tracker     |
 
 
 

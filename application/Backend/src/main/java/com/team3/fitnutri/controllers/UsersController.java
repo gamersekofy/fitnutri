@@ -1,8 +1,10 @@
 package com.team3.fitnutri.controllers;
 
+import com.team3.fitnutri.models.LoginRequest;
 import com.team3.fitnutri.models.User;
 import com.team3.fitnutri.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -38,5 +40,16 @@ public class UsersController {
     public ResponseEntity<?> deleteUser(@PathVariable Long id){
         userService.deleteUser(id);
         return ResponseEntity.ok().build();
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<?> loginUser(@RequestBody LoginRequest loginRequest){
+        boolean isAuthenticated =
+                userService.authenticateUser(loginRequest.getEmail(), loginRequest.getPassword());
+        if (isAuthenticated){
+            return ResponseEntity.ok().body("User authenticated successfully");
+        }else{
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid email or password");
+        }
     }
 }

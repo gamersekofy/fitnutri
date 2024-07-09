@@ -17,11 +17,12 @@ public class User {
     private double weight;
     private double height;
     private String gender;
+    private String password;
 
     public User() {
     }
 
-    public User(String first_name, String last_name, String email, Integer age, LocalDate dateOfBirth, double weight, double height, String gender) {
+    public User(String first_name, String last_name, String email, Integer age, LocalDate dateOfBirth, double weight, double height, String gender, String password) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.email = email;
@@ -30,6 +31,7 @@ public class User {
         this.weight = weight;
         this.height = height;
         this.gender = gender;
+        this.password = password;
     }
 
     public Long getId() {
@@ -102,5 +104,13 @@ public class User {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

@@ -1,6 +1,7 @@
 package com.team3.fitnutri.services;
 
 import com.team3.fitnutri.models.User;
+import com.team3.fitnutri.repositories.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

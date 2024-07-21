@@ -6,7 +6,7 @@ once you've downloaded the PairKey, please go to your terminal.
 
 once in the terminal, please CD into the directory where the PairKey is located. To do that, please use the command: cd Directory (Directory should be the name of the directory as to where the PairKey is downloaded into).
 
-Once you are in the proper Directory, please use this command to access the server: ssh -i CSC648PairKey.pem ubuntu@ec2-54-183-71-201.us-west-1.compute.amazonaws.com
+Once you are in the proper Directory, please use this command to access the server: ssh -i CSC648PairKey.pem ubuntu@ec2-54-151-86-174.us-west-1.compute.amazonaws.com
 
 Once you input the command, you should be redirected to our server. 
 

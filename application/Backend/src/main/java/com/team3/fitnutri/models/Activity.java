@@ -20,7 +20,7 @@ public class Activity {
         
     }
 
-    public Activity(Long id, LocalDate activityDate, Type activityType, double activityDuration, double activityDistance, int caloriesBurned, int userHeratRate) {
+    public Activity(Long id, LocalDate activityDate, Type activityType, double activityDuration, double activityDistance, int caloriesBurned, int userHeartRate) {
         this.id = id;
         this.activityDate = activityDate;
         this.activityType = activityType;
@@ -30,7 +30,50 @@ public class Activity {
         this.userHeartRate = userHeartRate;
     }
 
+    public long getId() {
+        return this.id;
+    }
+    public void setId(long id) {
+        this.id = id;
+    }
+    public LocalDate getActivityDate() {
+        return this.activityDate;
+    }
+    public void setActivityDate(LocalDate activityDate) {
+        this.activityDate = activityDate;
+    }
+    public Type getActivityType() {
+        return this.activityType;
+    }
+    public void setActivityType(Type activityType) {
+        this.activityType = activityType;
+    }
+    public double getActivityDuration() {
+        return this.activityDuration;
+    }
+    public void setActivityDuration(double activityDuration) {
+        this.activityDuration = activityDuration;
+    }
+    public double getActivityDistance() {
+        return this.activityDistance;
+    }
+    public void setActivityDistance(double activityDistance) {
+        this.activityDistance = activityDistance;
+    }
+    public int getCaloriesBurned() {
+        return this.caloriesBurned;
+    }
+    public void setCaloriesBurned(int caloriesBurned) {
+        this.caloriesBurned = caloriesBurned;
+    }
+    public int getUserHeartRate() {
+        return this.userHeartRate;
+    }
+    public void setUserHeartRate(int userHeartRate) {
+        this.userHeartRate = userHeartRate;
+    }
+
     private enum Type {
-        CARDIO, WEIGHLIFTING, MOBILITY, MINDFULNESS;
+        CARDIO, WEIGHTLIFTING, MOBILITY, MINDFULNESS;
     }
 }

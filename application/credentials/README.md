@@ -26,7 +26,7 @@ Connection Method: Standard TCP/IP Over SSH
 
 Connection Name: Can be your choosing, only shows on your end.
 
-SSH hostname: ec2-54-183-71-201.us-west-1.compute.amazonaws.com
+SSH hostname: ec2-54-151-86-174.us-west-1.compute.amazonaws.com
 
 SSH Username: ubuntu
 

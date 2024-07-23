@@ -7,6 +7,7 @@ import SignIn from './SignIn';
 import SignUp from './SignUp';
 import About from './About';
 import HealthInfo from './HealthInfo';
+import './App.css';
 
 function App() {
   return (

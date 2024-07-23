@@ -1,20 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Search from './Search';
+import './Header.css';
 
 function Header() {
   return (
-    <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px' }}>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <img src="/path-to-logo.png" alt="FitNutri" style={{ marginRight: '10px' }} />
+    <header className="header">
+      <div className="header-content">
+        <img src="/path-to-logo.png" alt="FitNutri" className="logo" />
         <nav>
-          <Link to="/" style={{ marginRight: '10px' }}>Home</Link>
-          <Link to="/About" style={{ marginRight: '10px' }}>About</Link>
-          <Link to="/HealthInfo" style={{ marginRight: '10px' }}>HealthInfo</Link>
-          <Link to="/PersonalPlan">Personal Plan</Link>
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/signIn" className="nav-link">signIn</Link>
+          <Link to="/signUp" className="nav-link">signUp</Link>
+          <Link to="/HealthInfo" className="nav-link">HealthInfo</Link>
+          <Link to="/Progress" className="nav-link">Progress</Link>
         </nav>
-        <Search />
+        <div className='search'>
+        <input placeholder="Search..."/>
+      <button>Search</button>
+        </div>
+      
       </div>
+      <div>
+      
+    </div>
     </header>
   );
 }

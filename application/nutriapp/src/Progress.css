@@ -1,0 +1,71 @@
+.FP-NP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1em;
+  height: auto; 
+}
+
+.FN-button{
+ display: flex;
+ justify-content: center;
+ margin: 2em;
+ 
+
+}
+
+
+.FP, .NP {
+  
+  border: 1px solid;
+  flex: 1;
+  margin: 0.5em;
+  padding: 20px; 
+}
+
+
+
+.FP .FP-lable-input{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.FP-values{
+  display: flex;
+width: calc (100% / 3 - 15px); 
+flex-direction: column;
+margin: 4px 0;
+}
+
+.NP .NP-lable-input{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.NP-values1{
+  display: flex;
+width: calc (100% / 3 - 15px); 
+flex-direction: column;
+margin: 4px 0;
+}
+
+.NP-values2{
+  display: flex;
+width: calc (100% / 3 - 15px); 
+flex-direction: column;
+margin: 4px 0;
+}
+
+.Weight-Goal-Graph, .Nutrition-Graph {
+  margin-top: 20px;
+}
+
+.detail-img {
+  width: 20%; 
+  height: auto;
+}

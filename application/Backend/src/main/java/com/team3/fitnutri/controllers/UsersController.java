@@ -6,6 +6,7 @@ import com.team3.fitnutri.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,6 +16,9 @@ import java.util.List;
 public class UsersController {
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @GetMapping("/allUsers")
     public ResponseEntity<List<User>> getAllUsers(){
@@ -28,6 +32,7 @@ public class UsersController {
 
     @PostMapping("/createUser")
     public ResponseEntity<User> addUser(@RequestBody User user){
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
         return ResponseEntity.ok(userService.createUser(user));
     }
 
@@ -44,9 +49,8 @@ public class UsersController {
 
     @PostMapping("/login")
     public ResponseEntity<?> loginUser(@RequestBody LoginRequest loginRequest){
-        boolean isAuthenticated =
-                userService.authenticateUser(loginRequest.getEmail(), loginRequest.getPassword());
-        if (isAuthenticated){
+        User user = userService.findByEmail(loginRequest.getEmail());
+        if(user != null && passwordEncoder.matches(loginRequest.getPassword(), user.getPassword())){
             return ResponseEntity.ok().body("User authenticated successfully");
         }else{
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid email or password");

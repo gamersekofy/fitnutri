@@ -1,91 +1,89 @@
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 1em;
-  }
-  
-  .section-container {
-   
-    margin-bottom: 20px; 
-    display: flex;
-  flex-direction: row; 
-  align-items: center; 
-  flex-wrap: wrap;
+body {
+  font-family: Arial, sans-serif;
+}
 
-    
-  }
-  
-  .journey-container {
-    margin-bottom: 20px; 
-    display: flex; 
-    flex-direction: column; 
-    border: 1px solid; 
-    text-align: center;
-    margin: 5px;
-    flex:1 ;
-   
-  }
+.container {
+  padding: 20px;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
 
-  .progress-section {
-    margin-bottom: 20px;
-display: flex;
-flex-direction: column; 
-border: 1px solid; 
-text-align: center;
-margin:5px;
-flex: 1;
-  }
-  
-  .journey-details {
-    display: flex;
-    flex-direction: row;
-    
-  }
-  
-  .detail-item {
-    width: 30%;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  
-  
-  .detail-img,
-  .progress-img {
-    width: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .detail-button,
-  .progress-button {
-    width: 100%;
-    padding: 10px;
-  }
-  
-  
-  
-  .video-section {
-    border: 1px solid;
-   
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-  
-  }
-  
-  .video-container {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-   
-   
-  }
-  
-  .video-item {
-    width: 30%;
-    padding: 10px;
-  }
-  
+.section {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 5px;
+  padding: 20px;
+}
+
+.section-row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image-container {
+  width: 15%;
+  padding: 10px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.image-container img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.image-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.image-container button:hover {
+  background-color: #0056b3;
+}
+
+.progress-container img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-section {
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  padding: 20px;
+}
+
+.video-section h2 {
+  color: #333;
+}
+
+.video-section .videos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-section .video-container {
+  width: 30%;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}

@@ -63,6 +63,4 @@ public class Article {
     public void getpostDate(){
         return post_date;
     }
-
-    public 
 }

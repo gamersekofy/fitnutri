@@ -9,7 +9,7 @@ function Header() {
         <img src="/path-to-logo.png" alt="FitNutri" style={{ marginRight: '10px' }} />
         <nav>
           <Link to="/" style={{ marginRight: '10px' }}>Home</Link>
-          <Link to="/about" style={{ marginRight: '10px' }}>About</Link>
+          <Link to="/About" style={{ marginRight: '10px' }}>About</Link>
           <Link to="/HealthInfo" style={{ marginRight: '10px' }}>HealthInfo</Link>
           <Link to="/PersonalPlan">Personal Plan</Link>
         </nav>

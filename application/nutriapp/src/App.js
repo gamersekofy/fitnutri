@@ -8,6 +8,11 @@ import SignUp from './SignUp';
 import About from './About';
 import HealthInfo from './HealthInfo';
 import Progress from './Progress';
+import Contact from './pages/Contact';
+import Nutrition from './pages/Nutrition';
+import Fitness from './pages/Fitness';
+
+
 
 function App() {
   return (
@@ -21,6 +26,10 @@ function App() {
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/HealthInfo" element={<HealthInfo />} />
           <Route path="/Progress" element={<Progress />} />
+          <Route path="/contact" element={<Contact />} />  
+          <Route path="/nutrition" element={<Nutrition />} /> 
+          <Route path="/fitness" element={<Fitness />} />
+
         </Routes>
         <Footer />
       </div>

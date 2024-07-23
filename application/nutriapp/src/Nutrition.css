@@ -1,0 +1,73 @@
+/* src/pages/Nutrition.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #E9F0EA;
+    color: #000;
+  }
+  
+  .nutrition-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    width: 1633px;
+    height: 138px;
+    background: #426B1F;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.5em;
+    font-family: Arial, sans-serif;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .image-placeholder {
+    width: 477px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #D9D9D9;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #426B1F;
+    color: white;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 24px;
+  }
+  

@@ -30,6 +30,7 @@ public class UsersController {
         return ResponseEntity.ok(userService.findUserById(id));
     }
 
+
     @PostMapping("/createUser")
     public ResponseEntity<User> addUser(@RequestBody User user){
         user.setPassword(passwordEncoder.encode(user.getPassword()));

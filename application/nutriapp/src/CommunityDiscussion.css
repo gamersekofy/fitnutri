@@ -1,0 +1,45 @@
+.title {
+    background: lightgrey;
+    padding: 1.5rem;
+  }
+  
+  .top-section {
+    display: flex;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Adjust width as needed */
+  }
+  
+  .user-image {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    margin-right: 10px;
+  }
+  
+  .logo-image {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+  }
+  
+  .right-section {
+    flex: 2; /* Adjust width as needed */
+    display: flex;
+    align-items: center;
+  }
+  
+  .text-area {
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }

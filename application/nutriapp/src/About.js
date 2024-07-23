@@ -65,7 +65,6 @@ import './About.css';
 
 import michelleImg from 'application/nutriapp/src/images/michelle.JPG';
 import mitchellImg from 'application/nutriapp/src/images/mitchell.jpg';
-import aliImg from './images/ali.jpg';
 import niloImg from 'application/nutriapp/src/images/Nilo.png';
 import eduardoImg from 'application/nutriapp/src/images/Eduardo.png';
 import shreeImg from 'application/nutriapp/src/images/shree.JPG';

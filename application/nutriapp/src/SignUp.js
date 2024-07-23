@@ -1,32 +1,19 @@
 import React, { useState } from 'react';
+import './SignUp.css';
 
-function Signup() {
-     // backend
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [errors, setErrors] = useState({});
+function SignUp() {
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-     // backend
-    console.log('Submitting', { email, password });
-     // backend
-    setTimeout(() => {
-      setEmail('');
-      setPassword('');
-      alert('Signup successful');
-    }, 1000);
-  };
- // backend
-  return (
-    <form onSubmit={handleSubmit}>
-      <label>Email</label>
-      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-      <label>Password</label>
-      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-      <button type="submit">Sign Up</button>
-    </form>
-  );
+    return (
+        <div>
+            <form className="sign-up-form">
+            <div><h1>Sign Up</h1></div>
+          <div className='Name'><label> Full Name: <input type="text" placeholder="Enter your full name"/> </label></div>
+          <div className='Email'><label> Email:<input type="email"placeholder="Enter your email"/></label></div>
+          <div className='Password'><label> Password:<input type="password" placeholder="Create a password"/> </label></div>
+          <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    );
 }
 
-export default Signup;
+export default SignUp;

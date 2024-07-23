@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Main from './Main';
@@ -7,7 +7,7 @@ import SignIn from './SignIn';
 import SignUp from './SignUp';
 import About from './About';
 import HealthInfo from './HealthInfo';
-import './App.css';
+import Progress from './Progress';
 
 function App() {
   return (
@@ -16,10 +16,11 @@ function App() {
         <Header/>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/SignIn" element={<SignIn />} />
-          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/signIn" element={<SignIn />} />
+          <Route path="/signUp" element={<SignUp />} />
           <Route path="/HealthInfo" element={<HealthInfo />} />
+          <Route path="/Progress" element={<Progress />} />
         </Routes>
         <Footer />
       </div>

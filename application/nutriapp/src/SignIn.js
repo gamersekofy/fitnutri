@@ -1,30 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './SignIn.css';
 
 function SignIn() {
-     // backend
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [errors, setErrors] = useState({});
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    // backend
-    console.log('Signing in', { email, password });
-    setTimeout(() => {
-      setEmail('');
-      setPassword('');
-      alert('Sign-in successful');
-    }, 1000);
-  };
- // backend
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Email</label>
-      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-      <label>Password</label>
-      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+    <div>
+    
+    <form className="sign-in-form">
+    <div><h1>Sign In</h1></div>
+      <div className='Email'>
+        <label>Email: </label>
+      <input type="email" placeholder="Enter your email" />
+      </div>
+      <div className='Password'>
+      <label>Password: </label>
+      <input type="password" placeholder="Enter your password" />
+      </div>
       <button type="submit">Sign In</button>
     </form>
+     </div>
   );
 }
 

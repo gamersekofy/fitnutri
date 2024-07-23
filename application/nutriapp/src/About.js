@@ -55,13 +55,13 @@
 import React from 'react';
 import './About.css';
 
-// Import images (make sure these paths are correct)
-import michelleImg from './images/michelle.jpg';
+// Ensure the file names and extensions match exactly (case-sensitive)
+import michelleImg from './images/michelle.JPG';
 import mitchellImg from './images/mitchell.jpg';
 import aliImg from './images/ali.jpg';
-import niloImg from './images/nilo.jpg';
-import eduardoImg from './images/eduardo.jpg';
-import shreeImg from './images/shree.jpg';
+import niloImg from './images/Nilo.png';
+import eduardoImg from './images/Eduardo.png';
+import shreeImg from './images/shree.JPG';
 
 function About() {
   return (

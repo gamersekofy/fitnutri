@@ -11,7 +11,7 @@ const RecipeVideo = () => {
     };
 
     const handleNavigateToWorkouts = () => {
-        navigate('/PersonalWorkouts');
+        navigate('/PersonalWorkoutPlan');
       };
 
   return (

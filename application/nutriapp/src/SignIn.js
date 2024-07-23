@@ -1,7 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SignIn.css';
 
 function SignIn() {
+
+  const navigate = useNavigate();
+
+    const handleNavigateTohome = () => {
+      navigate('/');
+    };
+
   return (
     <div>
     
@@ -15,7 +23,7 @@ function SignIn() {
       <label>Password: </label>
       <input type="password" placeholder="Enter your password" />
       </div>
-      <button type="submit">Sign In</button>
+      <button type="submit" onClick={handleNavigateTohome}>Sign In</button>
     </form>
      </div>
   );

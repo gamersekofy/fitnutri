@@ -8,9 +8,15 @@ function PersonalNutritionPlan() {
   const navigateToRecipes = () => {
     navigate('/PersonalRecipes');
   };
+  const navigateTonutritionplan = () => {
+    navigate('/Article');
+  };
+  const handleStartClick = () => {
+    navigate('/HealthInfo');
+  };
 
   const navigateToWorkouts = () => {
-    navigate('/PersonalWorkouts');
+    navigate('/PersonalWorkoutPlan');
   };
 
   return (
@@ -55,7 +61,8 @@ function PersonalNutritionPlan() {
       <div className="navigation-buttons">
         <button onClick={navigateToRecipes}>Recipes</button>
         <button onClick={navigateToWorkouts}>Workouts</button>
-        <button>Article</button>
+        <button onClick={navigateTonutritionplan}>Article</button>
+        
       </div>
     </div>
   );

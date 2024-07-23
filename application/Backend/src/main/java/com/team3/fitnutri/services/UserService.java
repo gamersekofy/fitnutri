@@ -27,6 +27,10 @@ public class UserService {
         return user.orElse(null);
     }
 
+    public User findByEmail(String email) {
+        return userRepository.findByEmail(email);
+    }
+
     public User createUser(User user) {
         return userRepository.save(user);
     }
@@ -48,10 +52,5 @@ public class UserService {
 
     public void deleteUser(Long id) {
         userRepository.deleteById(id);
-    }
-
-    public boolean authenticateUser(String email, String password) {
-        User user = userRepository.findByEmail(email);
-        return user != null && passwordEncoder.matches(password, user.getPassword());
     }
 }

@@ -56,12 +56,19 @@ import React from 'react';
 import './About.css';
 
 // Import images (make sure these paths are correct)
-import michelleImg from './images/michelle.jpg';
-import mitchellImg from './images/mitchell.jpg';
+// import michelleImg from './images/michelle.jpg';
+// import mitchellImg from './images/mitchell.jpg';
+// import aliImg from './images/ali.jpg';
+// import niloImg from './images/nilo.jpg';
+// import eduardoImg from './images/eduardo.jpg';
+// import shreeImg from './images/shree.jpg';
+
+import michelleImg from 'application/nutriapp/src/images/michelle.JPG';
+import mitchellImg from 'application/nutriapp/src/images/mitchell.jpg';
 import aliImg from './images/ali.jpg';
-import niloImg from './images/nilo.jpg';
-import eduardoImg from './images/eduardo.jpg';
-import shreeImg from './images/shree.jpg';
+import niloImg from 'application/nutriapp/src/images/Nilo.png';
+import eduardoImg from 'application/nutriapp/src/images/Eduardo.png';
+import shreeImg from 'application/nutriapp/src/images/shree.JPG';
 
 function About() {
   return (

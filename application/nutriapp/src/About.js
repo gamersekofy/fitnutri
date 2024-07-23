@@ -65,8 +65,9 @@ import shreeImg from './images/shree.JPG';
 function About() {
   return (
     <>
-      <header className="header">About Us</header>
+      
       <div className="container">
+      <header className="headers">About Us</header>
         <section className="team-intro">
           <h2>Welcome to TEAM 03</h2>
           <p>The creators of FitNutri Hub. Meet the team below and click on who you want to know more about!</p>
@@ -103,10 +104,9 @@ function About() {
             <p>Docs Editor</p>
           </a>
         </section>
+        
       </div>
-      <footer className="footer">
-        &copy; 2024 FitNutri Hub. All rights reserved.
-      </footer>
+     
     </>
   );
 }

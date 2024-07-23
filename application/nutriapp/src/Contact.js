@@ -1,4 +1,3 @@
-// src/pages/Contact.js
 import React, { useState } from 'react';
 import './Contact.css';
 
@@ -22,7 +21,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
+    // Add API Here
     setSubmitted(true);
   };
 

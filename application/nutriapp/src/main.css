@@ -1,51 +1,59 @@
 body {
   font-family: Arial, sans-serif;
-}
-
-.container {
-  padding: 20px;
-  align-items: center;
-  border: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
   background-color: #f9f9f9;
+ 
 }
 
-.section {
-  margin-bottom: 20px;
+.main-container {
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  flex: 1;
-  border: 1px solid #ddd;
+  align-items: center;
+ 
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+}
+
+.journey-container, .progress-section, .video-section {
+  margin-bottom: 20px;
   text-align: center;
-  margin: 5px;
   padding: 20px;
 }
 
-.section-row {
-  margin-bottom: 20px;
+.journey-details, .video-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-.image-container {
-  width: 15%;
+.detail-item, .video-item {
+  width: 30%; 
   padding: 10px;
-  text-align: center;
-  margin: 0 10px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.image-container img {
+.detail-item img, .progress-img {
   width: 100%;
-  margin-bottom: 10px;
   border-radius: 8px;
 }
 
-.image-container button {
+.detail-button, .video-section button {
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 4px;
@@ -53,37 +61,12 @@ body {
   transition: background-color 0.3s;
 }
 
-.image-container button:hover {
-  background-color: #0056b3;
+.detail-button:hover, .video-section button:hover {
+  background-color: gray;
 }
 
-.progress-container img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.video-section {
-  text-align: center;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 5px;
-  padding: 20px;
-}
-
-.video-section h2 {
-  color: #333;
-}
-
-.video-section .videos {
-  display: flex;
-  justify-content: space-between;
-}
-
-.video-section .video-container {
-  width: 30%;
-  padding: 10px;
-  background-color: #f1f1f1;
+.progress-img {
+  width: 100%; 
+  margin-top: 20px;
   border-radius: 8px;
 }

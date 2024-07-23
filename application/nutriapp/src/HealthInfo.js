@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './HealthInfo.css';
 
 function HealthInfo() {
+    const navigate = useNavigate();
+
+  const handleStartClick = () => {
+    navigate('/PersonalNutritionPlan');
+  };
 
     return (
         <div className="health-info-container">
@@ -27,7 +33,7 @@ function HealthInfo() {
               
                     <input placeholder='Types of Workout'/>
             
-                <button type="submit">Generate Plan</button>
+                <button type="submit" onClick={handleStartClick}>Generate Plan</button>
             </form>
         </div>
     );

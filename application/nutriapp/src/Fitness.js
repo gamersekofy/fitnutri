@@ -1,4 +1,4 @@
-// src/pages/Fitness.js
+
 import React from 'react';
 import './Fitness.css';
 

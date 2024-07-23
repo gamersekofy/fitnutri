@@ -1,56 +1,53 @@
-import React from "react";
-import { FaVideo } from "react-icons/fa";
-const AssessmentWorkout = () => {
+import React from 'react';
+import ReactPlayer from 'react-player';
+import { useNavigate } from 'react-router-dom';
+import './PersonalRecipes.css';
+
+const AssesmentWorkout = () => {
+  const navigate = useNavigate();
+
+  const navigateToRecipeVideo = () => {
+    navigate('/WorkoutVideo');
+  };
+
   return (
-    <>
-      <div className="assessment-workout">
-        <h2 className="main-assessment-title">Assessment Workout</h2>
-        <div className="assessment-grid">
-          <div className="item">
-            <div className="icon">
-              <FaVideo size={200} />
+    <div className="recipes-container">
+      <h2>Assesment Workout</h2>
+      
+      {/* Videos */}
+      <section className="video-section">
+        <div className="videos-wrapper">
+          <div className="video-item" onClick={navigateToRecipeVideo}>
+            <div className="video-thumbnail">
+              <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' width='100%' height='100%' />
             </div>
-            <div className="content">
-              <h3 className="assessment-title">{"Title"}</h3>
-              <p className="text">
-                {
-                  "Body text for whatever you would like to say. "
-                }
-              </p>
+            <div className="video-details">
+              <h3>Title</h3>
+              <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
             </div>
           </div>
-          <div className="item">
-            <div className="icon">
-              <FaVideo size={200} />
+          <div className="video-item" onClick={navigateToRecipeVideo}>
+            <div className="video-thumbnail">
+              <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' width='100%' height='100%' />
             </div>
-            <div className="content">
-              <h3 className="assessment-title">{"Title"}</h3>
-              <p className="text">
-                {" "}
-                {
-                  "Body text for whatever you would like to say. "
-                }
-              </p>
+            <div className="video-details">
+              <h3>Title</h3>
+              <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
             </div>
           </div>
-          <div className="item">
-            <div className="icon">
-              <FaVideo size={200} />
+          <div className="video-item" onClick={navigateToRecipeVideo}>
+            <div className="video-thumbnail">
+              <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' width='100%' height='100%' />
             </div>
-            <div className="content">
-              <h3 className="assessment-title">{"Title"}</h3>
-              <p className="text">
-                {" "}
-                {
-                  "Body text for whatever you would like to say.. "
-                }
-              </p>
+            <div className="video-details">
+              <h3>Title</h3>
+              <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
             </div>
           </div>
         </div>
-      </div>
-    </>
+      </section>
+    </div>
   );
 };
 
-export default AssessmentWorkout;
+export default AssesmentWorkout;

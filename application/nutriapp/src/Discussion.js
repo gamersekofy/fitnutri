@@ -1,8 +1,8 @@
 import React from "react";
-import "./communityDiscussion.module.css";
-import { CiImageOn } from "react-icons/ci";
+import "./Discussion.css";
 
-const CommunityDiscussion = () => {
+
+const Discussion = () => {
   return (
     <div className="community-discussion">
       <h2 className="title">Community Discussion</h2>
@@ -17,7 +17,7 @@ const CommunityDiscussion = () => {
             />
             <span className="user-name">username</span>
           </div>
-          <CiImageOn size={200} />
+          
         </div>
 
         <div className="right-section">
@@ -38,7 +38,7 @@ const CommunityDiscussion = () => {
             />
             <span className="user-name">username</span>
           </div>
-          <CiImageOn size={200} />
+          
         </div>
 
         <div className="right-section">
@@ -52,4 +52,4 @@ const CommunityDiscussion = () => {
   );
 };
 
-export default CommunityDiscussion;
+export default Discussion;

@@ -7,7 +7,7 @@ const PersonalWorkouts = () => {
   const navigate = useNavigate();
   
   const navigateToAssessmentExercises = () => {
-    navigate('/AssessmentExercises');
+    navigate('/FitnessAssesment');
   };
 
   const navigateToWorkoutVideo = () => {
@@ -21,7 +21,7 @@ const PersonalWorkouts = () => {
       {/* Videos */}
       <section className="video-section">
         <div className="videos-wrapper">
-          <div className="video-item" onClick={navigateToWorkoutVideo}>
+        <div className="video-item" onClick={navigateToWorkoutVideo}>
             <div className="video-thumbnail">
               <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' width='100%' height='100%' />
             </div>

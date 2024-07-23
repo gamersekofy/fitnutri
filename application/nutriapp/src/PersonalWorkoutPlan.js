@@ -13,6 +13,10 @@ function PersonalWorkoutPlan() {
     navigate('/PersonalWorkouts');
   };
 
+  const navigateToArticle = () => {
+    navigate('/Article');
+  };
+
   return (
     <div className="workout-plan-container">
       <div className="workout-plan-content">
@@ -56,7 +60,7 @@ function PersonalWorkoutPlan() {
         <div className="navigation-buttons">
           <button onClick={navigateToWorkouts}>Workouts</button>
           <button onClick={navigateToRecipes}>Recipes</button>
-          <button>Article</button>
+          <button onClick={navigateToArticle}>Article</button>
         </div>
       </div>
     </div>

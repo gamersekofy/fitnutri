@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
+import { useNavigate } from 'react-router-dom';
 import './main.css';
 
 function Main() {
+  const navigate = useNavigate();
+
+  const handleStartClick = () => {
+    navigate('/HealthInfo');
+  };
   return (
     <div className="main-container">
       <div className="section-container">
@@ -12,7 +18,7 @@ function Main() {
       
             <div className="detail-item">
               <img src="path_to_nutrition_image.jpg" alt="Nutrition/Fitness" className="detail-img" />
-              <button className="detail-button">Start</button>
+              <button className="detail-button" onClick={handleStartClick}>Start</button>
             </div>
           </div>
         </div>
@@ -27,9 +33,7 @@ function Main() {
             <img src="charts.png" alt="Progress Chart" className="progress-img" />
           </div>
         </div>
-      </div>
-
-      <div className="video-section">
+        <div className="video-section">
         <h2>Videos</h2>
         <div className="video-container">
           <div className="video-item">
@@ -43,6 +47,9 @@ function Main() {
           </div>
         </div>
       </div>
+      </div>
+
+      
     </div>
   );
 }

@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Progress.css';
 
 function Progress() {
+    const navigate = useNavigate();
+    const navigateToHealthInfo = () => {
+        navigate('/HealthInfo');
+      };
+
+
     return (
         <div>
             <div className='FP-NP'> 
@@ -66,7 +73,7 @@ function Progress() {
             </div>
             </div>
                 <div className='FN-button'>
-                <button type="submit">Edit</button>
+                <button type="submit" onClick={navigateToHealthInfo}>Edit</button>
                 <button type="submit">Print</button>
                 <button type="submit">Share</button>
                 </div>

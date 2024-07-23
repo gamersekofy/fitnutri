@@ -7,7 +7,7 @@ const WorkoutVideo = () => {
     const navigate = useNavigate();
 
     const handleNavigateToRecipes = () => {
-      navigate('/PersonalRecipes');
+      navigate('/PersonalNutritionPlan');
     };
 
     const handleNavigateToWorkouts = () => {
@@ -16,10 +16,8 @@ const WorkoutVideo = () => {
 
   return (
     <div className="recipe-video-container">
-      <h2>WorkoutVideo</h2>
-      <div className="video-player">
-        <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing width='100%' height='100%' />
-      </div>
+      <h2>Article</h2>
+      
       
       
       <div className="directions">
@@ -27,7 +25,7 @@ const WorkoutVideo = () => {
       </div>
       <div className="plan-buttons">
         <button onClick={handleNavigateToRecipes}>Recipes</button>
-        <button>Save Plan</button>
+        
         <button onClick={handleNavigateToWorkouts}>Workout</button>
       </div>
     </div>

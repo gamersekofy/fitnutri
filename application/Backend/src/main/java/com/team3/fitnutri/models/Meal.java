@@ -1,6 +1,8 @@
 package com.team3.fitnutri.models;
 
 import jakarta.persistence.*;
+import java.util.Map;
+
 
 @Entity
 public class Meal {
@@ -80,6 +82,76 @@ public class Meal {
         LUNCH,
         DINNER,
         SNACK;
+    }
+
+    public class Macronutrients {
+        private int carbohydrates;
+        private int proteins;
+        private int fats;
+    
+        public Macronutrients(int carbohydrates, int proteins, int fats) {
+            this.carbohydrates = carbohydrates;
+            this.proteins = proteins;
+            this.fats = fats;
+        }
+    
+        public int getCarbohydrates() {
+            return this.carbohydrates;
+        }
+    
+        public void setCarbohydrates(int carbohydrates) {
+            this.carbohydrates = carbohydrates;
+        }
+    
+        public int getProteins() {
+            return this.proteins;
+        }
+    
+        public void setProteins(int proteins) {
+            this.proteins = proteins;   
+        }
+    
+        public int getFats() {
+            return this.fats;
+        }
+    
+        public void setFats(int fats) {
+            this.fats = fats;
+        }
+    
+    }
+
+    public class Micronutrients {
+        private Map<String, Integer> vitamins;
+        private Map<String, Integer> minerals;
+        private int fiber;
+    
+        public Micronutrients(Map<String, Integer> vitamins, Map<String, Integer> minerals, int fiber) {
+            this.vitamins = vitamins;
+            this.minerals = minerals;
+            this.fiber = fiber;
+        }
+    
+        public Map<String, Integer> getVitamins() {
+            return this.vitamins;
+        }
+    
+        public void setVitamins(Map<String, Integer> vitamins) {
+            this.vitamins = vitamins;
+        }
+    
+        public Map<String, Integer> getMinerals() {
+            return this.minerals;
+        }
+    
+        public void setMinerals(Map<String, Integer> minerals) {
+            this.minerals = minerals;
+        }
+    
+        public int getFiber() {
+            return this.fiber;
+        }
+        
     }
 }
 

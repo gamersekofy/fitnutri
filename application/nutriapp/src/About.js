@@ -58,7 +58,6 @@ import './About.css';
 // Ensure the file names and extensions match exactly (case-sensitive)
 import michelleImg from './images/michelle.JPG';
 import mitchellImg from './images/mitchell.jpg';
-import aliImg from './images/ali.jpg';
 import niloImg from './images/Nilo.png';
 import eduardoImg from './images/Eduardo.png';
 import shreeImg from './images/shree.JPG';
@@ -83,11 +82,11 @@ function About() {
             <h3>Mitchell Caine</h3>
             <p>Frontend Lead</p>
           </a>
-          <a href="ali.html" className="team-member">
+          {/* <a href="ali.html" className="team-member">
             <img src={aliImg} alt="Ali Almusawi" />
             <h3>Ali Almusawi</h3>
             <p>GitHub Master</p>
-          </a>
+          </a> */}
           <a href="nilofar.html" className="team-member">
             <img src={niloImg} alt="Nilofar Ali" />
             <h3>Nilofar Ali</h3>

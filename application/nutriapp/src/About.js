@@ -55,6 +55,7 @@
 import React from 'react';
 import './About.css';
 
+<<<<<<< HEAD
 // Import images (make sure these paths are correct)
 // import michelleImg from './images/michelle.jpg';
 // import mitchellImg from './images/mitchell.jpg';
@@ -68,6 +69,14 @@ import mitchellImg from 'application/nutriapp/src/images/mitchell.jpg';
 import niloImg from 'application/nutriapp/src/images/Nilo.png';
 import eduardoImg from 'application/nutriapp/src/images/Eduardo.png';
 import shreeImg from 'application/nutriapp/src/images/shree.JPG';
+=======
+import michelleImg from './images/michelle.jpg';
+import mitchellImg from './images/mitchell.jpg';
+import aliImg from './images/ali.jpg';
+import niloImg from './images/nilo.jpg';
+import eduardoImg from './images/eduardo.jpg';
+import shreeImg from './images/shree.jpg';
+>>>>>>> 3f9b6d74a6e2843558fa617df6a158f14e744a26
 
 function About() {
   return (

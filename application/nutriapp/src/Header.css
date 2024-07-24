@@ -57,7 +57,7 @@ nav {
 .header {
     background-color: #A7B996 !important;
     padding: 30px;
-    width: 100%;
+    width: 110%;
 }
 
 .header-content {
@@ -65,7 +65,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+    width: 110%;
 }
 
 .logo {

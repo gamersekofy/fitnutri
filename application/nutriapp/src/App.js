@@ -22,8 +22,6 @@ import Discussion from './Discussion';
 import FitnessAssesment from './FitnessAssesment';
 import AssesmentWorkout from './AssesmentWorkout';
 import Article from './Article';
-import 'bootstrap/dist/css/bootstrap.min.css'; /*used for bootstrap*/
-
 
 
 function App() {

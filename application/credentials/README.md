@@ -43,7 +43,7 @@ Username : Team3Data
 Password: Team3StrongPassword!
 
 This is our About Us Website:
-http://54.183.71.201/csc648-848-05-sw-engineering-su24-T03/application/TEAM03/homepage.html
+http://54.151.86.174/
 
 NOTE: For some reason it would not connect when we did test connection, but if we went to the homepage and clicked the connection, it would prompt us for the password, and would connect right after*).
 

@@ -59,11 +59,8 @@ public class Article {
     public LocalDate getPost_date() {
         return post_date;
     }
-<<<<<<< HEAD
-=======
 
     public void setPost_date(LocalDate post_date) {
         this.post_date = post_date;
     }
->>>>>>> 5fef036c5de30de2731a484a55bf575db993bd8b
 }

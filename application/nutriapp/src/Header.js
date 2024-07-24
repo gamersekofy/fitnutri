@@ -49,32 +49,34 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav, Form, FormControl, Button, Container } from 'react-bootstrap';
 import './Header.css';
 
 function Header() {
   return (
-    <Navbar expand="lg" className="header">
-      <Navbar.Brand href="/">
-        <img src="/path-to-logo.png" alt="FitNutri" className="logo" />
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link as={Link} to="/" className="nav-link">Home</Nav.Link>
-          <Nav.Link as={Link} to="/about" className="nav-link">About</Nav.Link>
-          <Nav.Link as={Link} to="/contact" className="nav-link">Contact</Nav.Link>
-          <Nav.Link as={Link} to="/signIn" className="nav-link">Sign In</Nav.Link>
-          <Nav.Link as={Link} to="/signUp" className="nav-link">Sign Up</Nav.Link>
-          <Nav.Link as={Link} to="/NutriCommunity" className="nav-link">NutriCommunity</Nav.Link>
-          <Nav.Link as={Link} to="/Progress" className="nav-link">Progress</Nav.Link>
-        </Nav>
-        <Form inline className="ml-auto search">
-          <FormControl type="text" placeholder="Search..." className="mr-sm-2" />
-          <Button variant="outline-success" className="search-button">Search</Button>
-        </Form>
-      </Navbar.Collapse>
-    </Navbar>
+    <Container fluid>
+      <Navbar expand="lg" className="header">
+        <Navbar.Brand href="/">
+          <img src="/path-to-logo.png" alt="FitNutri" className="logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link as={Link} to="/" className="nav-link">Home</Nav.Link>
+            <Nav.Link as={Link} to="/about" className="nav-link">About</Nav.Link>
+            <Nav.Link as={Link} to="/contact" className="nav-link">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/signIn" className="nav-link">Sign In</Nav.Link>
+            <Nav.Link as={Link} to="/signUp" className="nav-link">Sign Up</Nav.Link>
+            <Nav.Link as={Link} to="/NutriCommunity" className="nav-link">NutriCommunity</Nav.Link>
+            <Nav.Link as={Link} to="/Progress" className="nav-link">Progress</Nav.Link>
+          </Nav>
+          <Form inline className="ml-auto search">
+            <FormControl type="text" placeholder="Search..." className="mr-sm-2" />
+            <Button variant="outline-success" className="search-button">Search</Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
+    </Container>
   );
 }
 

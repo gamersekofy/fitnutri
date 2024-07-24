@@ -54,36 +54,24 @@ import './Header.css';
 
 function Header() {
   return (
-    <Navbar bg="light" expand="lg" className="header">
+    <Navbar expand="lg" className="header">
       <Navbar.Brand href="/">
         <img src="/path-to-logo.png" alt="FitNutri" className="logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link as={Link} to="/">Home</Nav.Link>
-          <Nav.Link as={Link} to="/about">About</Nav.Link>
-          <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-          <Nav.Link as={Link} to="/signIn">Sign In</Nav.Link>
-          <Nav.Link as={Link} to="/signUp">Sign Up</Nav.Link>
-          <Nav.Link as={Link} to="/NutriCommunity">NutriCommunity</Nav.Link>
-          <Nav.Link as={Link} to="/Progress">Progress</Nav.Link>
-          {/* Uncomment the following lines as needed */}
-          {/* <Nav.Link as={Link} to="/HealthInfo">Health Info</Nav.Link>
-          <Nav.Link as={Link} to="/PersonalNutritionPlan">Personal Nutrition Plan</Nav.Link>
-          <Nav.Link as={Link} to="/PersonalRecipes">Personal Recipes</Nav.Link>
-          <Nav.Link as={Link} to="/AssesmentWorkout">Assessment Workout</Nav.Link>
-          <Nav.Link as={Link} to="/RecipeVideo">Recipe Video</Nav.Link>
-          <Nav.Link as={Link} to="/Discussion">Discussion</Nav.Link>
-          <Nav.Link as={Link} to="/PersonalWorkoutPlan">Personal Workout Plan</Nav.Link>
-          <Nav.Link as={Link} to="/PersonalWorkouts">Personal Workouts</Nav.Link>
-          <Nav.Link as={Link} to="/WorkoutVideo">Workout Video</Nav.Link>
-          <Nav.Link as={Link} to="/FitnessAssesment">Fitness Assessment</Nav.Link>
-          <Nav.Link as={Link} to="/communityDiscussion">Community Discussion</Nav.Link> */}
+          <Nav.Link as={Link} to="/" className="nav-link">Home</Nav.Link>
+          <Nav.Link as={Link} to="/about" className="nav-link">About</Nav.Link>
+          <Nav.Link as={Link} to="/contact" className="nav-link">Contact</Nav.Link>
+          <Nav.Link as={Link} to="/signIn" className="nav-link">Sign In</Nav.Link>
+          <Nav.Link as={Link} to="/signUp" className="nav-link">Sign Up</Nav.Link>
+          <Nav.Link as={Link} to="/NutriCommunity" className="nav-link">NutriCommunity</Nav.Link>
+          <Nav.Link as={Link} to="/Progress" className="nav-link">Progress</Nav.Link>
         </Nav>
-        <Form inline className="ml-auto">
+        <Form inline className="ml-auto search">
           <FormControl type="text" placeholder="Search..." className="mr-sm-2" />
-          <Button variant="outline-success">Search</Button>
+          <Button variant="outline-success" className="search-button">Search</Button>
         </Form>
       </Navbar.Collapse>
     </Navbar>

@@ -7,14 +7,6 @@ body {
             color: #333;
            
         }
-        .headers {
-            
-            color: black;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 2.5em;
-            font-family: Arial, sans-serif;
-        }
         .container {
             max-width: 1200px;
             margin: 20px auto;
@@ -64,10 +56,5 @@ body {
             text-decoration: none;
             color: inherit;
         }
-       footer {
-            text-align: center;
-            padding: 20px 0;
-            background:#28666e;
-            color: white;
-        }
+
     

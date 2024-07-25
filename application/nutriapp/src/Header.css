@@ -1,7 +1,5 @@
-
 .header {
     background-color: #A7B996; 
-    padding: 20px;
     width: 100%;
 }
 
@@ -10,11 +8,6 @@
     align-items: center; 
     justify-content:space-between;  
     flex-wrap: wrap;  
-}
-
-.logo {
- 
-    
 }
 
 nav {

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-/*import './RecipeVideo.css';*/
+import './RecipeVideo.css';
+import './style.css';
 import { useNavigate } from 'react-router-dom';
 
 const RecipeVideo = () => {
@@ -22,7 +23,7 @@ const RecipeVideo = () => {
       </div>
       <div className="time-info">
         <div className="time-item">
-          <label>Prepartion Time</label>
+          <label>Preparation Time</label>
           <input type="text" placeholder="Value" />
         </div>
         <div className="time-item">

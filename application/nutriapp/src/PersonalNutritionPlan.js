@@ -1,6 +1,7 @@
 import React from 'react';
-/*import './PersonalNutritionPlan.css';*/
 import { useNavigate } from 'react-router-dom';
+import './PersonalNutritionPlan.css';
+import './style.css';
 
 function PersonalNutritionPlan() {
   const navigate = useNavigate();
@@ -8,13 +9,9 @@ function PersonalNutritionPlan() {
   const navigateToRecipes = () => {
     navigate('/PersonalRecipes');
   };
-  const navigateTonutritionplan = () => {
+  const navigateToNutritionPlan = () => {
     navigate('/Article');
   };
-  const handleStartClick = () => {
-    navigate('/HealthInfo');
-  };
-
   const navigateToWorkouts = () => {
     navigate('/PersonalWorkoutPlan');
   };
@@ -61,8 +58,7 @@ function PersonalNutritionPlan() {
       <div className="navigation-buttons">
         <button onClick={navigateToRecipes}>Recipes</button>
         <button onClick={navigateToWorkouts}>Workouts</button>
-        <button onClick={navigateTonutritionplan}>Article</button>
-        
+        <button onClick={navigateToNutritionPlan}>Article</button>
       </div>
     </div>
   );

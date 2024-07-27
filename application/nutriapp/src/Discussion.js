@@ -1,5 +1,5 @@
 import React from "react";
-/*import "./Discussion.css";*/
+import "./Discussion.css";
 
 
 const Discussion = () => {
@@ -15,7 +15,7 @@ const Discussion = () => {
               alt="User"
               className="user-image"
             />
-            <span className="user-name">username</span>
+            <span className="user-name">user</span>
           </div>
           
         </div>
@@ -36,7 +36,7 @@ const Discussion = () => {
               alt="User"
               className="user-image"
             />
-            <span className="user-name">username</span>
+            <span className="user-name">user</span>
           </div>
           
         </div>

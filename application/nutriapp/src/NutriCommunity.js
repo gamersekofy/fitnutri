@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-/*import './NutriCommunity.css';*/
+import './NutriCommunity.css';
 
 const NutriCommunity = () => {
   const navigate = useNavigate();
@@ -12,7 +12,9 @@ const NutriCommunity = () => {
   return (
     <>
       <h2 className="title">FitNutri's Community</h2>
+      {/*
       <button className="Nutrition-button">Nutrition Advice</button>
+  */}
       <div className="form-container">
         <form>
           <div className="form-group">

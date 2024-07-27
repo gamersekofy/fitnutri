@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-/*import './FitnessAssessment.css';*/
+import './FitnessAssessment.css';
 
 const FitnessAssessment = () => {
 
@@ -62,7 +62,7 @@ const FitnessAssessment = () => {
                     </label>
                 </div>
 
-                <button type="submit" onClick={handleStartClick}>Assess Workout</button>
+                <button type="submit" onClick={handleStartClick}>Assess Personalized Workout</button>
             </form>
         </div>
     );

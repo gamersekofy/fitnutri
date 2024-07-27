@@ -1,0 +1,52 @@
+/* src/pages/Contact.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #E9F0EA;
+  color: #000;
+}
+
+.contact-container {
+  width: 500px; /* Further reduced width to fit the page better */
+  margin: 100px auto; /* Adjusted margin for better centering */
+  padding: 20px; /* Kept padding for appropriate space inside the container */
+  border: 1px solid #D9D9D9;
+  border-radius: 20px; /* Adjusted border-radius for a more subtle curve */
+  background-color: #FFFFFF;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 10px; /* Kept reduced margin for a more compact look */
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px; /* Kept reduced padding for a more compact look */
+  margin-top: 5px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px; /* Kept button padding consistent */
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.success-message {
+  margin-top: 20px;
+  color: green;
+}

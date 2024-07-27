@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-/*import './Contact.css';*/
+import './Contact.css';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -47,7 +47,7 @@ function Contact() {
         </label>
         <button type="submit">Submit</button>
       </form>
-      {submitted && <p className="success-message">Your form has been submitted successfully.</p>}
+      {submitted && <p className="Contact-success-message">Your form has been submitted successfully.</p>}
     </div>
   );
 }

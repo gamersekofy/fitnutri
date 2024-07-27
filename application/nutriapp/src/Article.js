@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import './WorkoutVideo.css';
+/*import './WorkoutVideo.css';*/
 import { useNavigate } from 'react-router-dom';
 
 const WorkoutVideo = () => {

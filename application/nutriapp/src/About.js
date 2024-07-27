@@ -53,7 +53,7 @@
 // export default About;
 
 import React from 'react';
-import './About.css';
+/*import './About.css';*/
 
 // Ensure the file names and extensions match exactly (case-sensitive)
 import michelleImg from './images/michelle.JPG';

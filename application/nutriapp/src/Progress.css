@@ -1,71 +1,149 @@
+
 .FP-NP {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 1em;
-  height: auto; 
+  justify-content: space-between;
+  margin: 20px;
 }
-
-.FN-button{
- display: flex;
- justify-content: center;
- margin: 2em;
- 
-
-}
-
 
 .FP, .NP {
-  
-  border: 1px solid;
   flex: 1;
-  margin: 0.5em;
-  padding: 20px; 
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.NP {
+  margin-right: 0;
 }
 
 
 
-.FP .FP-lable-input{
+.FP-Activ-Header, .Achievements-lable{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  
+}
+ 
+
+
+
+.FP-lable-input{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.NP-lable-input{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 1em;
+}
+
+.FP-values, .NP-values1, .NP-values2 {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.Weight-Graph, .Nutrition-Graph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-content: center;
+  margin: 1em;
+
+}
+
+.Card {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  
+}
+
+.CardContent {
+  display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  padding: 20px;
+
 }
 
-.FP-values{
+.text-muted-foreground {
+  color: #999;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+
+.FN-button {
   display: flex;
-width: calc (100% / 3 - 15px); 
-flex-direction: column;
-margin: 4px 0;
-}
-
-.NP .NP-lable-input{
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.NP-values1{
-  display: flex;
-width: calc (100% / 3 - 15px); 
-flex-direction: column;
-margin: 4px 0;
-}
-
-.NP-values2{
-  display: flex;
-width: calc (100% / 3 - 15px); 
-flex-direction: column;
-margin: 4px 0;
-}
-
-.Weight-Goal-Graph, .Nutrition-Graph {
+  justify-content: space-around;
   margin-top: 20px;
 }
 
-.detail-img {
-  width: 20%; 
-  height: auto;
+button {
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049; 
+}
+
+.Achievements{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 1em;
+  justify-items: center;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .FP-NP {
+    flex-direction: column;
+  }
+
+  .FP, .NP {
+    margin-right: 0;
+  }
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import './NutriCommunity.css';
+/*import './NutriCommunity.css';*/
 
 const NutriCommunity = () => {
   const navigate = useNavigate();

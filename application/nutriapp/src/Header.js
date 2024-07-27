@@ -1,45 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+
   return (
     <header className="header">
-      <div className="header-content">
-        <img src="/path-to-logo.png" alt="FitNutri" className="logo" />
-        <nav>
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/about" className="nav-link">About</Link>
-          <Link to="/Contact" className="nav-link">Contact</Link>
-          <Link to="/signIn" className="nav-link">signIn</Link>
-          <Link to="/signUp" className="nav-link">signUp</Link>
-          <Link to="/NutriCommunity" className="nav-link">NutriCommunity</Link>
-          <Link to="/Progress" className="nav-link">Progress</Link>
-          
-        
-          {/*  <Link to="/HealthInfo" className="nav-link">HealthInfo</Link>
-          <Link to="/Progress" className="nav-link">Progress</Link>
-          <Link to="/PersonalNutritionPlan" className="nav-link">PersonalNutritionPlan</Link>
-          <Link to="/PersonalRecipes" className="nav-link">PersonalRecipes</Link>
-          <Link to="/AssesmentWorkout" className="nav-link">AssesmentWorkout</Link>
-          <Link to="/RecipeVideo" className="nav-link">RecipeVideo</Link>
-          <Link to="/Discussion" className="nav-link">Discussion</Link>
-          <Link to="/PersonalWorkoutPlan" className="nav-link">PersonalWorkoutPlan</Link>
-          <Link to="/PersonalWorkouts" className="nav-link">PersonalWorkouts</Link>
-          <Link to="/WorkoutVideo" className="nav-link">WorkoutVideo</Link>
-          <Link to="/FitnessAssesment" className="nav-link">FitnessAssesment</Link>
-  <Link to="/communityDiscussion" className="nav-link">communityDiscussion</Link>*/}
+      <img src="/Logo.png" alt="FitNutri" className="logo" />
 
-        </nav>
-        <div className='search'>
+      
+      <nav className="nav-menu">
+      <Link to="/" className="nav-link" onClick={() => setIsMobileOpen(false)}>Home</Link>
+        <Link to="/About" className="nav-link" onClick={() => setIsMobileOpen(false)}>About</Link>
+        <Link to="/Contact" className="nav-link" onClick={() => setIsMobileOpen(false)}>Contact</Link>
+        <Link to="/SignIn" className="nav-link" onClick={() => setIsMobileOpen(false)}>SignIn</Link>
+        <Link to="/SignUp" className="nav-link" onClick={() => setIsMobileOpen(false)}>SignUp</Link>
+        <Link to="/Progress" className="nav-link" onClick={() => setIsMobileOpen(false)}>Progress</Link>
+        <Link to="/NutriCommunity" className="nav-link" onClick={() => setIsMobileOpen(false)}>NutriCommunity</Link>
+      </nav>
+
+      
+      <div className="hamburger1" onClick={() => setIsMobileOpen(!isMobileOpen)}>☰</div>
+      
+      
+     <nav className="nav-menu1" style={{ display: isMobileOpen ? 'block' : 'none'}}>
+        <Link to="/" className="nav-link1" onClick={() => setIsMobileOpen(false)}>Home</Link>
+        <Link to="/About" className="nav-link1" onClick={() => setIsMobileOpen(false)}>About</Link>
+        <Link to="/Contact" className="nav-link1" onClick={() => setIsMobileOpen(false)}>Contact</Link>
+        <Link to="/SignIn" className="nav-link1" onClick={() => setIsMobileOpen(false)}>SignIn</Link>
+        <Link to="/SignUp" className="nav-link1" onClick={() => setIsMobileOpen(false)}>SignUp</Link>
+        <Link to="/Progress" className="nav-link1" onClick={() => setIsMobileOpen(false)}>Progress</Link>
+        <Link to="/NutriCommunity" className="nav-link1" onClick={() => setIsMobileOpen(false)}>NutriCommunity</Link>
+      </nav>
+      
+      <div className='search'>
         <input placeholder="Search..."/>
-      <button>Search</button>
-        </div>
-      
+        <button>Search</button>
       </div>
-      <div>
-      
-    </div>
     </header>
   );
 }

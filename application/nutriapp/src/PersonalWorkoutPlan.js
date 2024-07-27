@@ -1,5 +1,5 @@
 import React from 'react';
-import './PersonalWorkoutPlan.css';
+/*import './PersonalWorkoutPlan.css';*/
 import { useNavigate } from 'react-router-dom';
 
 function PersonalWorkoutPlan() {

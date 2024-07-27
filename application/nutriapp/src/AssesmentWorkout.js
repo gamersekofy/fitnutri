@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import { useNavigate } from 'react-router-dom';
-import './PersonalRecipes.css';
+/*import './PersonalRecipes.css';*/
 
 const AssesmentWorkout = () => {
   const navigate = useNavigate();

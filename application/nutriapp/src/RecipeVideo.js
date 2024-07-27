@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import './RecipeVideo.css';
+/*import './RecipeVideo.css';*/
 import { useNavigate } from 'react-router-dom';
 
 const RecipeVideo = () => {

@@ -1,6 +1,6 @@
 // src/pages/Nutrition.js
 import React from 'react';
-import './Nutrition.css';
+/*import './Nutrition.css';*/
 
 function Nutrition() {
   return (

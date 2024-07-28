@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import { useNavigate } from 'react-router-dom';
 import './PersonalWorkouts.css';
-import './style.css';
+
 
 const PersonalWorkouts = () => {
   const navigate = useNavigate();

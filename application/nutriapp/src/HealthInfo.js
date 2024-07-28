@@ -4,6 +4,11 @@ import './HealthInfo.css';
 
 function HealthInfo() {
     const navigate = useNavigate();
+
+  const navigateTopersonalNutritionPlan = () => {
+    navigate('/PersonalNutritionPlan');
+  };
+
     const [formData, setFormData] = useState({
         age: '',
         height: '',
@@ -184,7 +189,7 @@ function HealthInfo() {
                     </label>
                 </div>
                 {errors.termsAccepted && <p className="error">{errors.termsAccepted}</p>}
-                <button type="submit">Generate Plan</button>
+                <button type="submit" onClick={navigateTopersonalNutritionPlan }>Generate Plan</button>
             </form>
         </div>
     );

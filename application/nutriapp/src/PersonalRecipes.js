@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import { useNavigate } from 'react-router-dom';
 import './PersonalRecipes.css';
-import './style.css';
+
 
 const PersonalRecipes = () => {
   const navigate = useNavigate();

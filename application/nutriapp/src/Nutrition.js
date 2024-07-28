@@ -1,8 +1,10 @@
-// src/pages/Nutrition.js
 import React from 'react';
 import './Nutrition.css';
 
 function Nutrition() {
+  
+
+   
   return (
     <div className="nutrition-container">
       <header className="nutrition-header">Nutrition Article</header>

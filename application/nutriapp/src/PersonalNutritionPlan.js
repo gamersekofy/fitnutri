@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './PersonalNutritionPlan.css';
-import './style.css';
+
 
 function PersonalNutritionPlan() {
   const navigate = useNavigate();

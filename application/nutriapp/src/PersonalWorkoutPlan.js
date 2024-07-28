@@ -1,7 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import './PersonalWorkoutPlan.css';
-
+import { useNavigate } from 'react-router-dom';
 
 function PersonalWorkoutPlan() {
   const navigate = useNavigate();
@@ -19,49 +18,51 @@ function PersonalWorkoutPlan() {
   };
 
   return (
-    <div className="workout-plan-container">
-      <div className="workout-plan-content">
-        <h2>Personalized Workout Plan</h2>
-        <div className="workout-plan-selections">
-          <div className="selection-item">
-            <select>
-              <option>Goals</option>
-              <option>Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.</option>
-            </select>
+    <div className="pwp-app-container">
+      <div className="pwp-workout-plan-wrapper">
+        <div className="pwp-workout-plan-container">
+          <h2>Personalized Workout Plan</h2>
+          <div className="pwp-workout-plan-content">
+            <div className="pwp-selection-item">
+              <select>
+                <option>Goals</option>
+                <option>Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.</option>
+              </select>
+            </div>
+            <div className="pwp-selection-item">
+              <select>
+                <option>Weekly Schedule</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </div>
+            <div className="pwp-selection-item">
+              <select>
+                <option>Benefits</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </div>
+            <div className="pwp-selection-item">
+              <select>
+                <option>Title</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </div>
+            <div className="pwp-selection-item">
+              <select>
+                <option>Title</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </div>
           </div>
-          <div className="selection-item">
-            <select>
-              <option>Weekly Schedule</option>
-              <option>Option 1</option>
-              <option>Option 2</option>
-            </select>
+          <div className="pwp-navigation-buttons">
+            <button onClick={navigateToWorkouts}>Workouts</button>
+            <button onClick={navigateToRecipes}>Recipes</button>
+            <button onClick={navigateToArticle}>Article</button>
           </div>
-          <div className="selection-item">
-            <select>
-              <option>Benefits</option>
-              <option>Option 1</option>
-              <option>Option 2</option>
-            </select>
-          </div>
-          <div className="selection-item">
-            <select>
-              <option>Title</option>
-              <option>Option 1</option>
-              <option>Option 2</option>
-            </select>
-          </div>
-          <div className="selection-item">
-            <select>
-              <option>Title</option>
-              <option>Option 1</option>
-              <option>Option 2</option>
-            </select>
-          </div>
-        </div>
-        <div className="navigation-buttons">
-          <button onClick={navigateToWorkouts}>Workouts</button>
-          <button onClick={navigateToRecipes}>Recipes</button>
-          <button onClick={navigateToArticle}>Article</button>
         </div>
       </div>
     </div>

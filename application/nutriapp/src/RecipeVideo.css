@@ -1,59 +1,78 @@
-.recipe-video-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
-    width: 100%;
+.rv-recipe-video-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
-.recipe-video-container h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.rv-recipe-video-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.video-player {
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 40px;
-    background-color: #f0f0f0;
+.rv-video-player {
+  height: 500px;
+  margin-bottom: 20px;
 }
 
-.directions {
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 40px;
+.rv-time-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 98%;
 }
 
-.directions textarea {
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    resize: none;
+.rv-time-item {
+  width: 22%;
+  text-align: left;
 }
 
-.plan-buttons {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 800px;
-    margin-top: 40px;
+.rv-time-item label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-.plan-buttons button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.rv-time-item input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
 }
 
-.plan-buttons button:hover {
-    background-color: #555;
+.rv-ingredients, .rv-directions {
+  margin-bottom: 20px;
+  width: 98%;
+}
+
+.rv-ingredients label, .rv-directions label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.rv-ingredients textarea, .rv-directions textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+.rv-plan-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.rv-plan-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.rv-plan-buttons button:hover {
+  background-color: #555;
 }

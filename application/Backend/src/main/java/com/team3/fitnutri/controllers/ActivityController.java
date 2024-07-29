@@ -1,7 +1,7 @@
 package com.team3.fitnutri.controllers;
 
-import com.team3.fitnutri.models.Workout;
-import com.team3.fitnutri.services.WorkoutService;
+import com.team3.fitnutri.models.Activity;
+import com.team3.fitnutri.services.ActivityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,12 +16,12 @@ public class ActivityController {
 
     @GetMapping("/allActivity")
     public ResponseEntity<List<Activity>> getAllActivities() {
-        return ResponseEntity.ok(recipeService.findAllActivities());
+        return ResponseEntity.ok(activityService.findAllActivities());
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Activity> getActivityById(@PathVariable Long id) {
-        return ResponseEntity.ok(recipeService.findActivityById(id));
+        return ResponseEntity.ok(activityService.findActivityById(id));
     }
 
     @PostMapping("/createActivity")
@@ -36,7 +36,7 @@ public class ActivityController {
 
     @DeleteMapping("/deleteActivity/{id}")
     public ResponseEntity<?> deleteActivity(@PathVariable Long id) {
-        recipeService.deleteActivity(id);
+        activityService.deleteActivity(id);
         return ResponseEntity.ok().build();
     }
 }

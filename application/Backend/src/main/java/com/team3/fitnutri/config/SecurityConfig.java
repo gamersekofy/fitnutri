@@ -25,7 +25,6 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests((authz) -> authz
                         .requestMatchers("/", "/home", "/user/login", "/user/createUser").permitAll()
-                        .requestMatchers("/recipe/**", "/workout/**", "/user/**").authenticated()
                         .anyRequest().authenticated())
                 .httpBasic(Customizer.withDefaults()); // Use basic authentication
         return http.build();

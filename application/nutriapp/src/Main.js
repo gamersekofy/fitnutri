@@ -318,5 +318,3 @@ function Main() {
 }
 
 export default Main;
-
-testing purposes

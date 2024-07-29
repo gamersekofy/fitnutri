@@ -29,9 +29,20 @@
     border-radius: 4px;
 }
 
-.terms-container {
-    
-} 
+.health-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.health-form select:focus {
+    border-color: #0056b3;
+    outline: none;
+}
 
 .terms-container label{
     display: flex;

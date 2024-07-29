@@ -12,20 +12,20 @@ public class Meal {
     private Type type;
     private String name;
     private int calories;
-    private Macronutrients macronutrients;
-    private Micronutrients micronutrients;
+    /*private Macronutrients macronutrients;
+    private Micronutrients micronutrients;*/
 
     public Meal() {
         
     }
 
-    public Meal(long id, Type type, String name, int calories, Macronutrients macronutrients, Micronutrients micronutrients) {
+    public Meal(long id, Type type, String name, int calories) {
         this.id = id;
         this.type = type;
         this.name = name;
         this.calories = calories;
-        this.macronutrients = macronutrients;
-        this.micronutrients = micronutrients;
+        /*this.macronutrients = macronutrients;
+        this.micronutrients = micronutrients;*/
     }
 
     public long getId() {
@@ -60,7 +60,7 @@ public class Meal {
         this.calories = calories;
     }
 
-    public Macronutrients getMacronutrients() {
+    /*public Macronutrients getMacronutrients() {
         return this.macronutrients;
     }
 
@@ -74,7 +74,7 @@ public class Meal {
 
     public void setMicronutrients(Micronutrients micronutrients) {
         this.micronutrients = micronutrients;
-    }
+    }*/
 
 
     private enum Type {
@@ -84,7 +84,7 @@ public class Meal {
         SNACK;
     }
 
-    public class Macronutrients {
+    /*public class Macronutrients {
         private int carbohydrates;
         private int proteins;
         private int fats;
@@ -152,7 +152,7 @@ public class Meal {
             return this.fiber;
         }
         
-    }
+    }*/
 }
 
 

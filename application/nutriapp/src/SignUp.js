@@ -58,7 +58,7 @@ function SignUp() {
         if (validateForm()) {
             console.log('Form Data Submitted:', formData);
             // example of an API call to register user
-            fetch('http://13.57.220.69:8080/user/createUser', {
+            fetch('http://13.57.220.69:8081/user/createUser', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

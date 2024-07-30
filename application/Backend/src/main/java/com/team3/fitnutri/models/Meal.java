@@ -1,7 +1,6 @@
 package com.team3.fitnutri.models;
 
 import jakarta.persistence.*;
-import java.util.Map;
 
 
 @Entity
@@ -24,8 +23,6 @@ public class Meal {
         this.type = type;
         this.name = name;
         this.calories = calories;
-        /*this.macronutrients = macronutrients;
-        this.micronutrients = micronutrients;*/
     }
 
     public long getId() {

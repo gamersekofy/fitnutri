@@ -198,7 +198,7 @@ function HealthInfo() {
                     </label>
                 </div>
                 {errors.termsAccepted && <p className="error">{errors.termsAccepted}</p>}
-                <button type="submit">Generate Plan</button>
+                <button type="submit" onClick={navigateTopersonalNutritionPlan}>Generate Plan</button>
             </form>
         </div>
     );

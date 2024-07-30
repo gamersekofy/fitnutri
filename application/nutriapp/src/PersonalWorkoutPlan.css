@@ -62,9 +62,10 @@
     padding: 5px 0;
     border-bottom: 2px solid #2a9d8f;
 }
-.workout-plan-container .plan-buttons {
+.workout-plan-container .plan-buttons button{
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
+    background-color: #333;
   }

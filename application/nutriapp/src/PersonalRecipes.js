@@ -21,28 +21,28 @@ const PersonalRecipes = () => {
             <div className="pr-videos-wrapper">
               <div className="pr-video-item" onClick={navigateToRecipeVideo}>
                 <div className="pr-video-thumbnail">
-                  <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' width='100%' height='100%' />
+                  <ReactPlayer url='https://www.https://www.youtube.com/watch?v=lrwMKkyU14k' width='100%' height='100%' />
                 </div>
                 <div className="pr-video-details">
-                  <h3>Title</h3>
+                  <h3>5 Keto Recipes</h3>
                   <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
                 </div>
               </div>
               <div className="pr-video-item" onClick={navigateToRecipeVideo}>
                 <div className="pr-video-thumbnail">
-                  <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' width='100%' height='100%' />
+                  <ReactPlayer url='https://www.https://www.youtube.com/watch?v=lrwMKkyU14k' width='100%' height='100%' />
                 </div>
                 <div className="pr-video-details">
-                  <h3>Title</h3>
+                  <h3>5 Keto Recipes</h3>
                   <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
                 </div>
               </div>
               <div className="pr-video-item" onClick={navigateToRecipeVideo}>
                 <div className="pr-video-thumbnail">
-                  <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' width='100%' height='100%' />
+                  <ReactPlayer url='https://www.https://www.youtube.com/watch?v=lrwMKkyU14k' width='100%' height='100%' />
                 </div>
                 <div className="pr-video-details">
-                  <h3>Title</h3>
+                  <h3>5 Keto Recipes</h3>
                   <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
                 </div>
               </div>

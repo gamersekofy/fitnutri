@@ -1,0 +1,51 @@
+.assessment-workout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 5em;
+  }
+  
+  .assessment-workout .assessment-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .assessment-workout .item {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .assessment-workout .icon {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .assessment-workout .content {
+    text-align: left;
+  }
+  
+  .assessment-workout .assessment-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .assessment-workout .text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .assessment-workout .main-assessment-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  

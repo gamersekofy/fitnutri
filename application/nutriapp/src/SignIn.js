@@ -71,8 +71,8 @@ function SignIn() {
   };
 
   const handleForgotPassword = () => {
-    // Here you could navigate to a dedicated forgot password page or open a modal
-    navigate('/forgot-password'); // Example path
+    
+    navigate('/forgot-password'); 
   };
 
   return (

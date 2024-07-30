@@ -52,17 +52,13 @@ textarea {
 
 button {
   display: block;
-  width: 20%; /* Changed from 100% to auto */
-  padding: 8px 16px; /* Reduced padding */
-  background-color: #28a745;
+  width: 20%; 
+  padding: 8px 16px; 
+  background-color: black;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px; /* Reduced font size */
-  margin: 20px auto 0; /* Centered the button and added top margin */
-}
-
-button:hover {
-  background-color: #218838;
+  font-size: 16px; 
+  margin: 20px auto 0; 
 }

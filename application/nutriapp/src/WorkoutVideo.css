@@ -1,10 +1,10 @@
 
 .fullscreen-container {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically */
-    height: 100vh;           /* Full height of the viewport */
-    background-color: #f5f5f5; /* Optional: background color */
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    background-color: #f5f5f5; 
   }
   
   .workout-video-container {
@@ -12,22 +12,22 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #ffffff; /* Optional: background color */
-    width: 150%;                /* Make the container wider */
-    max-width: 1400px;         /* Set a max-width to keep it within reasonable bounds */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: shadow for better appearance */
-    border-radius: 8px;        /* Optional: rounded corners */
+    background-color: #ffffff; 
+    width: 100%;                
+    max-width: 1400px;        
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    border-radius: 8px;       
   }
   
   .video-player {
-    width: 100%;               /* Make the video player take the full width of the container */
-    max-width: 1200px;         /* Set a max-width for the video player */
-    aspect-ratio: 16/9;        /* Maintain a 16:9 aspect ratio */
+    width: 100%;               
+    max-width: 1200px;         
+    aspect-ratio: 16/9;        
     margin: 20px 0;
   }
   
   .directions {
-    width: 100%;               /* Match the width of the video player */
+    width: 100%;             
     max-width: 1200px;
     margin: 20px 0;
   }
@@ -36,7 +36,8 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 3em;
   }
 
 
@@ -55,21 +56,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150px; /* Set a fixed width for consistency */
+    width: 150px; 
     text-align: center;
   }
   
   .name-image img {
-    width: 100%;         /* Make the image take up the full width of its container */
-    height: auto;        /* Maintain the aspect ratio */
-    max-height: 150px;   /* Set a maximum height to ensure images are the same size */
-    object-fit: cover;   /* Ensure the image covers the area without distortion */
-    border-radius: 8px;  /* Optional: to make the image corners rounded */
+    width: 100%;         
+    height: auto;        
+    max-height: 150px;   
+    object-fit: cover;   
+    border-radius: 8px;  
   }
   
   .name-image p {
     margin: 5px 0;
-    font-size: 0.8rem; /* Adjust the font size to make the text smaller */
+    font-size: 0.8rem; 
   }
 
 

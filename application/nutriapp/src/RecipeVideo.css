@@ -62,6 +62,7 @@
   display: flex;
   justify-content: center;
   gap: 30px;
+  margin-bottom: 5em;
 }
 
 .rv-plan-buttons button {

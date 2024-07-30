@@ -25,31 +25,31 @@ const PersonalWorkouts = () => {
             <div className="pw-videos-wrapper">
               <div className="pw-video-item" onClick={navigateToWorkoutVideo}>
                 <div className="pw-video-thumbnail">
-                  <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' width='100%' height='100%' />
+                  <ReactPlayer url='https://www.youtube.com/watch?v=IT94xC35u6k' width='100%' height='100%' />
                 </div>
                 <div className="pw-video-details">
-                  <h3>Title</h3>
-                  <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+                  <h3>Beginner Workout - Your Path to Fitness</h3>
+                  <p>Fitness is not about being better than someone else. It's about being better than you used to be.</p>
                 </div>
               </div>
               <div className="pw-video-item" onClick={navigateToWorkoutVideo}>
                 <div className="pw-video-thumbnail">
-                  <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' width='100%' height='100%' />
+                  <ReactPlayer url='https://www.youtube.com/watch?v=IT94xC35u6k' width='100%' height='100%' />
                 </div>
                 <div className="pw-video-details">
-                  <h3>Title</h3>
-                  <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+                  <h3>Beginner Workout - Your Path to Fitness</h3>
+                  <p>Fitness is not about being better than someone else. It's about being better than you used to be.</p>
                 </div>
               </div>
               <div className="pw-video-item" onClick={navigateToWorkoutVideo}>
                 <div className="pw-video-thumbnail">
-                  <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' width='100%' height='100%' />
+                  <ReactPlayer url='https://www.youtube.com/watch?v=IT94xC35u6k' width='100%' height='100%' />
                 </div>
                 <div className="pw-video-details">
-                  <h3>Title</h3>
-                  <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+                  <h3>Beginner Workout - Your Path to Fitness</h3>
+                  <p>Fitness is not about being better than someone else. It's about being better than you used to be.</p>
                 </div>
-              </div>
+            </div>
             </div>
           </section>
           <div className="pw-assessment-button-container">

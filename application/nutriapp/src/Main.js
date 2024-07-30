@@ -11,9 +11,16 @@ import './main.css';
 function Main() {
   const navigate = useNavigate();
 
+ 
+
   const handleStartClick = () => {
     navigate('/HealthInfo');
   };
+
+  const handleSearchClick = () => {
+    alert("Search feature is not available at the moment.");
+  };
+
   return (
     <div className="main-container">
       <h2>Start Your Journey Today</h2>
@@ -21,8 +28,11 @@ function Main() {
        <div className="journey-container">
           <div className="journey-details">
             <div className='detail-item'><img src="FitNutri.png" alt="Nutrition/Fitness" className="detail-img" />
-              <h2>Fitness/Nutrition</h2>
+              <h2>
+              <p>Transform your body and fuel your fitness goals with personalized meal plans and real-time nutrition tracking! </p>
+              </h2>
              <button className="detail-button" onClick={handleStartClick}>Start</button>
+             
              </div>
               
             
@@ -32,6 +42,7 @@ function Main() {
         <div className="FP-section">
           <div className='FP-word'><h2>Fitness Progress</h2></div>
           <div className='FP-card'>
+            <p>chart feature is not available at the moment.</p>
           <Card className="lg:max-w-md">
               <CardHeader className="space-y-0 pb-2">
                 <CardDescription>Today</CardDescription>
@@ -164,6 +175,7 @@ function Main() {
 
           <div className='NP-word'><h2>Nutrition Progress</h2></div>
           <div className='NF-Card'>
+          <p>chart feature is not available at the moment.</p>
           <Card className="lg:max-w-md">
               <CardHeader className="space-y-0 pb-2">
                 <CardDescription>Today</CardDescription>
@@ -300,13 +312,13 @@ function Main() {
         <h2>Videos</h2>
         <div className="video-container">
           <div className="video-item">
-            <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing width='100%' height='100%' />
+            <ReactPlayer url='https://www.youtube.com/watch?v=lrwMKkyU14k' playing width='100%' height='100%' />
           </div>
           <div className="video-item">
-            <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing width='100%' height='100%' />
+            <ReactPlayer url='https://www.youtube.com/watch?v=IT94xC35u6k' playing width='100%' height='100%' />
           </div>
           <div className="video-item">
-            <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing width='100%' height='100%' />
+            <ReactPlayer url='https://www.youtube.com/watch?v=cGxJ79TbsAI&t=0s' playing width='100%' height='100%' />
           </div>
         </div>
       </div>

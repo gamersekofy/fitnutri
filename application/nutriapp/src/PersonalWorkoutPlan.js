@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useNavigate } from 'react-router-dom';
 import { faDumbbell, faBrain, faHeartbeat } from '@fortawesome/free-solid-svg-icons';
 /*import axios from 'axios';*/
 import './PersonalWorkoutPlan.css';
@@ -12,6 +13,18 @@ function PersonalWorkoutPlan() {
   const [goals, setGoals] = useState([]);
   const [routine, setRoutine] = useState({});
   const [benefits, setBenefits] = useState([]);
+
+  const navigate = useNavigate();
+
+  const navigateToRecipes = () => {
+    navigate('/PersonalRecipes');
+  };
+  const navigateToartical = () => {
+    navigate('/Article');
+  };
+  const navigateToWorkouts = () => {
+    navigate('/PersonalWorkouts');
+  };
 
 
 /*
@@ -39,7 +52,7 @@ useEffect(() => {
 
   return (
     <div className="workout-plan-container">
-      <h1>Keto Diet Exercise Plan</h1>
+      <h1>Personal Workout Plan</h1>
       <div>
         <h2 onClick={() => setShowGoals(!showGoals)}>
           <FontAwesomeIcon icon={faHeartbeat} className="icon" /> Goals
@@ -99,9 +112,9 @@ useEffect(() => {
         )}
       </div>
       <div className="plan-buttons">
-        <button>Recipes</button>
-        <button>Save Plan</button>
-        <button>Workout</button>
+        <button onClick={navigateToRecipes}>Personal Recipes </button>
+        <button onClick={navigateToartical}>Article</button>
+        <button onClick={navigateToWorkouts}>Personal Workout</button>
       </div>
     </div>
   );

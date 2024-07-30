@@ -12,7 +12,7 @@ function PersonalNutritionPlan() {
   const navigateToRecipes = () => {
     navigate('/PersonalRecipes');
   };
-  const navigateToNutritionPlan = () => {
+  const navigateToartical = () => {
     navigate('/Article');
   };
   const navigateToWorkouts = () => {
@@ -57,7 +57,7 @@ function PersonalNutritionPlan() {
   return (
     <div className="nutrition-plan-container">
       {error && <div className="error">Error: {error}</div>}
-      <h2>Personalized Nutrition Plan</h2>
+      <h2 className='PNP'>Personalized Nutrition Plan</h2>
       <div>
         <h2 onClick={() => setShowGoals(!showGoals)}>
           <FontAwesomeIcon icon={faHeartbeat} className="icon" /> Goals
@@ -160,9 +160,9 @@ function PersonalNutritionPlan() {
         )}
       </div>
       <div className="plan-buttons">
-        <button onClick={navigateToRecipes}>Recipes</button>
-        <button onClick={navigateToNutritionPlan}>Save Plan</button>
-        <button onClick={navigateToWorkouts}>Workout</button>
+        <button onClick={navigateToRecipes}>Personal Recipes</button>
+        <button onClick={navigateToartical}>Article</button>
+        <button onClick={navigateToWorkouts}>Personal WorkoutPlan Workout</button>
       </div>
     </div>
   );

@@ -58,7 +58,7 @@ function SignUp() {
         if (validateForm()) {
             console.log('Form Data Submitted:', formData);
             
-            fetch('http://localhost:8080/user/createUser', {
+            fetch('http://13.57.220.69:8080/user/createUser', {
                 method: 'POST',
                 mode:'cors',
                 headers: {

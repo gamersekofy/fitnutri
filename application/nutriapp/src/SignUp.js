@@ -55,11 +55,11 @@ function SignUp() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        async
         if (validateForm()) {
             console.log('Form Data Submitted:', formData);
             // example of an API call to register user
-            fetch('http://localhost:8080/user/createUser', {
+            fetch('http://13.57.220.69:8080/user/createUser', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

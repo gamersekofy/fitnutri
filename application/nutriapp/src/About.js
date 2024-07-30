@@ -77,6 +77,8 @@ import mitchellImg from './images/mitchell.jpg';
 import niloImg from './images/Nilo.png';
 import eduardoImg from './images/Eduardo.png';
 import shreeImg from './images/shree.JPG';
+import JohnImg from './images/J.webp';
+
 
 
 
@@ -117,7 +119,7 @@ function About() {
             <h3>Shreejana Bartaula</h3>
             <p>Docs Editor</p>
           </a>
-           {/* <a href="ali.html" className="About-team-member">
+            <a href="ali.html" className="About-team-member">
             <img src={aliImg} alt="Ali Almusawi" />
             <h3>Ali Almusawi</h3>
             <p>GitHub Master</p>
@@ -137,8 +139,8 @@ function About() {
             <h3>Ali Haldwan</h3>
             <p>Frontend</p>
           </a> 
-           */}
-        </section>
+           
+    </section>
         
       </div>
      

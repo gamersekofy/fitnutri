@@ -52,6 +52,25 @@ public class User {
         this.password = password;
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @NotNull
+    @Size(min = 1, max = 50)
+    private String first_name;
+
+    @Size(min = 1, max = 50)
+    private String last_name;
+
+    @NotNull
+    @Email
+    private String email;
+
+    @NotNull
+    @Size(min = 8)
+    private String password;
+
     public Long getId() {
         return id;
     }

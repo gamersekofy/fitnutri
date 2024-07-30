@@ -63,6 +63,7 @@
 
 package com.team3.fitnutri.controllers;
 
+import com.team3.fitnutri.models.LoginRequest;
 import com.team3.fitnutri.models.User;
 import com.team3.fitnutri.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -105,9 +106,9 @@ public class UsersController {
     }
 
     @PutMapping("/updateUser/{id}")
-    public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User userDate){
-        userDate.setPassword(passwordEncoder.encode(userDate.getPassword()));
-        return ResponseEntity.ok(userService.updateUser(id, userDate));
+    public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User userData){
+        userData.setPassword(passwordEncoder.encode(userData.getPassword()));
+        return ResponseEntity.ok(userService.updateUser(id, userData));
     }
 
     @DeleteMapping("/deleteUser/{id}")

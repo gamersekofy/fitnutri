@@ -216,7 +216,7 @@ function SignUp() {
                 })
                 .then(data => {
                     console.log('Registration successful:', data);
-                    navigate('/');
+                    navigate('/SignIn');
                 })
                 .catch(error => {
                     console.error('Registration failed:', error);

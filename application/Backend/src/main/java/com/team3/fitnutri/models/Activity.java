@@ -1,6 +1,9 @@
 package com.team3.fitnutri.models;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+
 import java.time.LocalDate;
 
 @Entity
@@ -8,11 +11,20 @@ public class Activity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NotNull
     private LocalDate activityDate;
+
+    @NotNull
     private Type activityType;
+
+    @NotNull
     private double activityDuration;
+
     private double activityDistance;
+
     private int caloriesBurned;
+
     private int userHeartRate;
     
     

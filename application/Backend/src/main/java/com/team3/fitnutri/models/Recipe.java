@@ -1,7 +1,6 @@
 package com.team3.fitnutri.models;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
 
 import java.util.List;
 
@@ -10,8 +9,6 @@ public class Recipe {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @NotNull
     private String name;
     private String nutrientGoal;
     private Integer servingSize;

@@ -1,10 +1,6 @@
 package com.team3.fitnutri.models;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 
 import java.time.LocalDate;
 
@@ -13,28 +9,14 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @NotNull
-    @Size(min = 1, max = 50)
     private String first_name;
-
-    @Size(min = 1, max = 50)
     private String last_name;
-
-    @NotNull
-    @Email
     private String email;
-
-    @NotNull
-    @Min(13)
     private Integer age;
     private LocalDate dateOfBirth;
     private double weight;
     private double height;
     private String gender;
-
-    @NotNull
-    @Size(min = 8)
     private String password;
 
     public User() {

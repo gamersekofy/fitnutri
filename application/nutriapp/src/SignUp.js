@@ -55,7 +55,6 @@ function SignUp() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        async
         if (validateForm()) {
             console.log('Form Data Submitted:', formData);
             // example of an API call to register user

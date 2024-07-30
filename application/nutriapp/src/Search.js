@@ -1,14 +1,13 @@
-// src/components/Search.js
 import React, { useState } from 'react';
 
 function Search() {
-     // backend
+    
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
 
   const handleSearch = async () => {
     try {
-      // backend
+ 
       const response = await fetch(`https://api.example.com/search?q=${query}`);
       const data = await response.json();
       setResults(data);
@@ -16,7 +15,7 @@ function Search() {
       console.error('Search error:', error);
     }
   };
-   // backend
+  
 
   return (
     <div>

@@ -34,8 +34,8 @@ public class MealService {
             meal.setType(mealData.getType());
             meal.setName(mealData.getName());
             meal.setCalories(mealData.getCalories());
-            /*meal.setMacronutrients(mealData.getMacronutrients());
-            meal.setMicronutrients(mealData.getMicronutrients());*/
+            meal.setMacronutrients(mealData.getMacronutrients());
+            meal.setMicronutrients(mealData.getMicronutrients());
             return mealRepository.save(meal);
         } else {
             return null;

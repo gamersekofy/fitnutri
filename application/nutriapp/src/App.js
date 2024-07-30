@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
-/*import Footer from './Footer';*/
+import Footer from './Footer';
 import Main from './Main';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
@@ -52,7 +52,7 @@ function App() {
           <Route path="/FitnessAssesment" element={<FitnessAssesment />} />
           <Route path="/AssesmentWorkout" element={<AssesmentWorkout />} />
         </Routes>
-       {/*<Footer />*/}
+       <Footer />
       </div>
     </Router>
   );

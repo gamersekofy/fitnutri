@@ -1,5 +1,5 @@
-/* src/pages/Contact.css */
-body {
+
+.contact-container body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
@@ -8,11 +8,11 @@ body {
 }
 
 .contact-container {
-  width: 500px; /* Further reduced width to fit the page better */
-  margin: 100px auto; /* Adjusted margin for better centering */
-  padding: 20px; /* Kept padding for appropriate space inside the container */
+  width: 500px; 
+  margin: 100px auto; 
+  padding: 20px; 
   border: 1px solid #D9D9D9;
-  border-radius: 20px; /* Adjusted border-radius for a more subtle curve */
+  border-radius: 20px; 
   background-color: #FFFFFF;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .contact-form label {
-  margin-bottom: 10px; /* Kept reduced margin for a more compact look */
+  margin-bottom: 10px; 
   font-size: 16px;
   color: #333;
 }
@@ -30,7 +30,7 @@ body {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 8px; /* Kept reduced padding for a more compact look */
+  padding: 8px; 
   margin-top: 5px;
   border: 1px solid #D9D9D9;
   border-radius: 5px;
@@ -38,7 +38,7 @@ body {
 
 .contact-form button {
   width: 100%;
-  padding: 10px; /* Kept button padding consistent */
+  padding: 10px; 
   background-color: #000000;
   color: white;
   border: none;

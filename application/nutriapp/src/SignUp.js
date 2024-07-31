@@ -5,8 +5,8 @@ import "./SignUp.css";
 function SignUp() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    first_name: "",
-    last_name: "",
+    first_name: "Eduardo",
+    last_name: "Munoz",
     age: "",
     height: "",
     weight: "",
@@ -87,8 +87,8 @@ function SignUp() {
         body: JSON.stringify({
         //   firstName: formData.first_name,
         //   lastName: formData.last_name,
-          first_name: "Eduardo",
-          last_name: "Munoz",
+        //   first_name: "Eduardo",
+        //   last_name: "Munoz",
           email: formData.email,
           password: formData.password,
           age: formData.age, // Example static age

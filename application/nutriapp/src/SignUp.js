@@ -5,9 +5,15 @@ import './SignUp.css';
 function SignUp() {
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
-        name: '',
+        first_name: '',
+        last_name: '',
+        age: '',
+        height: '',
+        weight: '',
         email: '',
         password: '',
+        gender: '',
+        dateOfBirth: '',
         confirmPassword: ''
     });
     const [errors, setErrors] = useState({});
@@ -23,8 +29,21 @@ function SignUp() {
         let isValid = true;
         let newErrors = {};
 
-        if (!formData.name.trim()) {
-            newErrors.name = "Name is required";
+        if (!formData.first_name.trim()) {
+            newErrors.first_name = "First name is required.";
+            isValid = false;
+        }
+        
+        if(!formData.last_name.trim()) {
+            newErrors.last_name = "Last name required.";
+            isValid = false;
+        }
+
+        if (!formData.age.trim()){
+            newErrors.age = "Age is required";
+            isValid = false;
+        } else if(Number(formData.age) < 13){
+            newErrors.age = "You need to be at least 13 years or older.";
             isValid = false;
         }
 
@@ -66,15 +85,15 @@ function SignUp() {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    firstName: formData.name.split(' ')[0],
-                    lastName: formData.name.split(' ')[1],
+                    firstName: formData.name,
+                    lastName: formData.name,
                     email: formData.email,
                     password: formData.password,
-                    age: 30,  // Example static age
-                    dateOfBirth: '1993-01-01',  // Example static date of birth
-                    weight: 70.5,  // Example static weight
-                    height: 175.0,  // Example static height
-                    gender: 'male'  // Example static gender
+                    age: formData.age,  // Example static age
+                    dateOfBirth: formData.dateOfBirth,  // Example static date of birth
+                    weight: formData.weight,  // Example static weight
+                    height: formData.height,  // Example static height
+                    gender: formData.gender  // Example static gender
                 })
             })
                 .then(response => {
@@ -102,12 +121,48 @@ function SignUp() {
         <div className="signup-container">
             <form className="signup-form" onSubmit={handleSubmit}>
                 <h2>Sign Up</h2>
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">First Name</label>
                 <input
                     type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
+                    id="last_name"
+                    name="last_name"
+                    value={formData.last_name}
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="name">Last Name</label>
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    value={formData.age}
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="name">Height</label>
+                <input
+                    type="number"
+                    id="height"
+                    name="height"
+                    value={formData.height}
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="name">Age</label>
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    value={formData.age}
+                    onChange={handleChange}
+                    required
+                />
+                <label htmlFor="name">Weight</label>
+                <input
+                    type="number"
+                    id="weight"
+                    name="weight"
+                    value={formData.weight}
                     onChange={handleChange}
                     required
                 />

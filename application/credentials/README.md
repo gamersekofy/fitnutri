@@ -6,7 +6,7 @@ once you've downloaded the PairKey, please go to your terminal.
 
 once in the terminal, please CD into the directory where the PairKey is located. To do that, please use the command: cd Directory (Directory should be the name of the directory as to where the PairKey is downloaded into).
 
-Once you are in the proper Directory, please use this command to access the server: ssh -i CSC648PairKey.pem ubuntu@ec2-54-151-86-174.us-west-1.compute.amazonaws.com
+Once you are in the proper Directory, please use this command to access the server: ssh -i CSC648PairKey.pem ubuntu@ec2-13-57-220-69.us-west-1.compute.amazonaws.com
 
 Once you input the command, you should be redirected to our server. 
 
@@ -26,7 +26,7 @@ Connection Method: Standard TCP/IP Over SSH
 
 Connection Name: Can be your choosing, only shows on your end.
 
-SSH hostname: ec2-54-151-86-174.us-west-1.compute.amazonaws.com
+SSH hostname: ec2-13-57-220-69.us-west-1.compute.amazonaws.com
 
 SSH Username: ubuntu
 
@@ -43,7 +43,7 @@ Username : Team3Data
 Password: Team3StrongPassword!
 
 This is our About Us Website:
-http://54.151.86.174/
+http://13.57.220.69/
 
 NOTE: For some reason it would not connect when we did test connection, but if we went to the homepage and clicked the connection, it would prompt us for the password, and would connect right after*).
 

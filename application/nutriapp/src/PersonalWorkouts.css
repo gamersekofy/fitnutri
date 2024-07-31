@@ -1,46 +1,87 @@
-.personal-workouts-container {
-    padding: 20px;
-    text-align: center;
+.pw-app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 140px);
 }
 
-.personal-workouts-container h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.pw-workouts-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.personal-workouts-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+.pw-workouts-container {
+  max-width: 1200px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
-.personal-workout-item {
-    flex: 1 1 200px;
-    max-width: 300px;
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+.pw-workouts-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.personal-workout-item img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+.pw-video-section {
+  text-align: center;
+  margin: 20px 0;
 }
 
-.personal-workout-item:hover {
-    transform: translateY(-5px);
+.pw-videos-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
-.personal-workout-item h3 {
-    margin: 10px 0 5px;
+.pw-video-item {
+  margin: 10px;
+  max-width: 30%;
+  box-sizing: border-box;
+  text-align: left;
+  cursor: pointer;
+  padding: 20px;
 }
 
-.personal-workout-item p {
-    font-size: 14px;
-    color: #666;
+.pw-video-item:hover {
+  background-color: lightgreen;
+}
+
+.pw-video-thumbnail {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.pw-video-details {
+  padding: 10px 0 0 0;
+}
+
+.pw-video-details h3 {
+  margin: 0 0 8px;
+}
+
+.pw-video-details p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.pw-assessment-button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pw-assessment-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.pw-assessment-button:hover {
+  background-color: #555;
 }

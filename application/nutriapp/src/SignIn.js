@@ -15,7 +15,7 @@ function SignIn() {
       ...formData,
       [e.target.name]: e.target.value
     });
-    
+
     if (errors[e.target.name]) {
       setErrors({ ...errors, [e.target.name]: '' });
     }
@@ -66,16 +66,20 @@ function SignIn() {
       })
       .catch(error => {
           console.error('Log in failed:', error);
-          
           setErrors({ api: 'Login failed, please try again.' });
       });
     }
   };
 
+  const handleForgotPassword = () => {
+    
+    navigate('/forgot-password'); 
+  };
+
   return (
-    <div className="signup-container"> 
+    <div className="signup-container">
       <form className="signup-form" onSubmit={handleSubmit}>
-        <h2>Sign In</h2>
+        <h2>Log In</h2>
         <label htmlFor="email">Email</label>
         <input
           type="email"
@@ -86,6 +90,7 @@ function SignIn() {
           required
         />
         {errors.email && <div className="error">{errors.email}</div>}
+        
         <label htmlFor="password">Password</label>
         <input
           type="password"
@@ -96,6 +101,11 @@ function SignIn() {
           required
         />
         {errors.password && <div className="error">{errors.password}</div>}
+        
+        <div className="password-reset-link" onClick={handleForgotPassword}>
+          Forgot Password?
+        </div>
+        
         {errors.api && <div className="error">{errors.api}</div>}
         <button type="submit">Log In</button>
       </form>

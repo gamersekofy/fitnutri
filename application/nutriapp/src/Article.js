@@ -1,35 +1,33 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
-/*import './WorkoutVideo.css';*/
 import { useNavigate } from 'react-router-dom';
+import './Article.css';
 
-const WorkoutVideo = () => {
+const Article = () => {
     const navigate = useNavigate();
 
-    const handleNavigateToRecipes = () => {
-      navigate('/PersonalNutritionPlan');
+    const handleNavigateToNutritionPlan = () => {
+        navigate('/PersonalNutritionPlan');
     };
 
-    const handleNavigateToWorkouts = () => {
+    const handleNavigateToArticle = () => {
         navigate('/PersonalWorkoutPlan');
-      };
+    };
 
-  return (
-    <div className="recipe-video-container">
-      <h2>Article</h2>
-      
-      
-      
-      <div className="directions">
-        <textarea placeholder="desc"></textarea>
-      </div>
-      <div className="plan-buttons">
-        <button onClick={handleNavigateToRecipes}>Recipes</button>
-        
-        <button onClick={handleNavigateToWorkouts}>Workout</button>
-      </div>
-    </div>
-  );
+    return (
+        <div className="article">
+            <h2>Article</h2>
+            <div className="content">
+                <div className="image-placeholder">
+                    <img src="https://via.placeholder.com/720x400" alt="Placeholder" />
+                </div>
+                
+            </div>
+            <div className="plan-buttons">
+                <button onClick={handleNavigateToNutritionPlan}>Personal Nutrition Plan</button>
+                <button onClick={handleNavigateToArticle}>Personal Work Paln</button>
+            </div>
+        </div>
+    );
 }
 
-export default WorkoutVideo;
+export default Article;

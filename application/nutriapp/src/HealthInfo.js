@@ -59,7 +59,7 @@ function HealthInfo() {
             errors['age'] = 'Age is required';
         } else if (formData.age > maxAge) {
             isValid = false;
-            errors['age'] = `Age must be less than or equal to ${maxAge}`;
+            errors['age'] = `Age must be less than ${maxAge} Ib`;
         }
 
         if (!formData.height) {
@@ -67,7 +67,7 @@ function HealthInfo() {
             errors['height'] = 'Height is required';
         } else if (formData.height > maxHeight) {
             isValid = false;
-            errors['height'] = `Height must be less than or equal to ${maxHeight} cm`;
+            errors['height'] = `Height must be less than ${maxHeight} ft`;
         }
 
         if (!formData.weight) {
@@ -75,7 +75,7 @@ function HealthInfo() {
             errors['weight'] = 'Weight is required';
         } else if (formData.weight > maxWeight) {
             isValid = false;
-            errors['weight'] = `Weight must be less than or equal to ${maxWeight} kg`;
+            errors['weight'] = `Weight must be less than  than ${maxWeight} Ib`;
         }
 
         if (!formData.goalWeight) {
@@ -83,7 +83,7 @@ function HealthInfo() {
             errors['goalWeight'] = 'goalWeight is required';
         } else if (formData.goalWeight > maxWeight) {
             isValid = false;
-            errors['goalWeight'] = `goalWeight must be less than or equal to ${maxWeight} kg`;
+            errors['goalWeight'] = `goalWeight must be less than than ${maxWeight} Ib`;
         }
         if(!formData.a1cReading){
             isValid = false;
@@ -126,7 +126,7 @@ function HealthInfo() {
             return;
         }
 
-        // example of implmenting an API setup to handle this POST request
+        // implmenting an API 
         fetch('/api/healthinfo', {
             method: 'POST',
             headers: {
@@ -150,14 +150,8 @@ function HealthInfo() {
                 return;
             }
         
-            // Navigate with parameters
-            navigate(`/Progress?weight=${formData.weight}&goalWeight=${formData.goalWeight}&daysAvailable=${formData.daysAvailable}`);
-    
-        
-
-
-
-    };
+            
+            navigate(`/Progress?weight=${formData.weight}&goalWeight=${formData.goalWeight}&daysAvailable=${formData.daysAvailable}`);    };
 
     return (
         <div className="health-container">
@@ -173,13 +167,28 @@ function HealthInfo() {
                 {errors.goalWeight && <p className="error">{errors.goalWeight}</p>}
                 <input placeholder='a1cReading' name='a1cReading' value={formData.a1cReading} onChange={handleChange} />
                 {errors.height && <p className="error">{errors.a1cReading}</p>}
-                <input placeholder='nutritionTypes' name='nutritionTypes' value={formData.nutritionTypes} onChange={handleChange} />
+                
+                <select name="nutritionTypes" value={formData.nutritionTypes} onChange={handleChange}>
+                        <option value="">Select Nutrition Type</option>
+                        <option value="Keto">Keto</option>
+                        <option value="Vegan">Vegan</option>
+                        <option value="Paleo">Paleo</option>
+                        <option value="Mediterranean">Mediterranean</option>
+                </select>
                 {errors.weight && <p className="error">{errors.nutritionTypes}</p>}
+                
                 <input placeholder='dietaryRestrictions' name='dietaryRestrictions' value={formData.dietaryRestrictions} onChange={handleChange} />
                 {errors.age && <p className="error">{errors.dietaryRestrictions}</p>}
-                <input placeholder='daysAvailable' name='daysAvailable' value={formData.daysAvailable} onChange={handleChange} />
+                <input placeholder='# of daysAvailable a week' name='daysAvailable' value={formData.daysAvailable} onChange={handleChange} />
                 {errors.height && <p className="error">{errors.daysAvailable}</p>}
-                <input placeholder='workoutTypes' name='workoutTypes' value={formData.workoutTypes} onChange={handleChange} />
+                
+                <select name="workoutTypes" value={formData.workoutTypes} onChange={handleChange}>
+                        <option value="">Select Workout Type</option>
+                        <option value="Cardio">Cardio</option>
+                        <option value="Strength">Strength Training</option>
+                        <option value="Flexibility">Flexibility</option>
+                        <option value="Balance">Balance Exercises</option>
+                    </select>
                 {errors.weight && <p className="error">{errors.workoutTypes}</p>}
             
                 <div className="terms-container">
@@ -189,7 +198,7 @@ function HealthInfo() {
                     </label>
                 </div>
                 {errors.termsAccepted && <p className="error">{errors.termsAccepted}</p>}
-                <button type="submit" onClick={navigateTopersonalNutritionPlan }>Generate Plan</button>
+                <button type="submit" onClick={navigateTopersonalNutritionPlan}>Generate Plan</button>
             </form>
         </div>
     );

@@ -2,16 +2,20 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
+
+
 function Header() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-
+  const handleSearchClick = () => {
+    alert("Search feature is not available at the moment.");
+  };
   return (
     <header className="header">
       <img src="/Logo.png" alt="FitNutri" className="logo" />
 
       
       <nav className="nav-menu">
-      <Link to="/" className="nav-link" onClick={() => setIsMobileOpen(false)}>Home</Link>
+        <Link to="/" className="nav-link" onClick={() => setIsMobileOpen(false)}>Home</Link>
         <Link to="/About" className="nav-link" onClick={() => setIsMobileOpen(false)}>About</Link>
         <Link to="/Contact" className="nav-link" onClick={() => setIsMobileOpen(false)}>Contact</Link>
         <Link to="/SignIn" className="nav-link" onClick={() => setIsMobileOpen(false)}>SignIn</Link>
@@ -36,7 +40,7 @@ function Header() {
       
       <div className='search'>
         <input placeholder="Search..."/>
-        <button>Search</button>
+        <button onClick={handleSearchClick} className="search-button">Search</button>
       </div>
     </header>
   );

@@ -60,3 +60,15 @@
 .signup-form button:hover {
     background-color: lightslategrey;
 }
+
+.password-reset-link {
+    color: #0066cc;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .password-reset-link:hover {
+    text-decoration: underline;
+  }

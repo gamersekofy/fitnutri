@@ -3,6 +3,7 @@ package com.team3.fitnutri.controllers;
 import com.team3.fitnutri.models.LoginRequest;
 import com.team3.fitnutri.models.User;
 import com.team3.fitnutri.services.UserService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -32,15 +33,15 @@ public class UsersController {
 
 
     @PostMapping("/createUser")
-    public ResponseEntity<User> addUser(@RequestBody User user){
+    public ResponseEntity<User> addUser(@Valid @RequestBody User user){
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         return ResponseEntity.ok(userService.createUser(user));
     }
 
     @PutMapping("/updateUser/{id}")
-    public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User userDate){
-        userDate.setPassword(passwordEncoder.encode(userDate.getPassword()));
-        return ResponseEntity.ok(userService.updateUser(id, userDate));
+    public ResponseEntity<User> updateUser(@PathVariable Long id, @Valid @RequestBody User userData){
+        userData.setPassword(passwordEncoder.encode(userData.getPassword()));
+        return ResponseEntity.ok(userService.updateUser(id, userData));
     }
 
     @DeleteMapping("/deleteUser/{id}")

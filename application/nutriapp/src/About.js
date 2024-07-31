@@ -20,7 +20,7 @@ function About() {
       
       <div className="About-container">
       <header className="About-headers">About Us</header>
-        <section className="team-intro">
+        <section className="About-team-intro">
           <h2>Welcome to TEAM 03</h2>
           <p>The creators of FitNutri Hub. Meet the team below and click on who you want to know more about!</p>
         </section>

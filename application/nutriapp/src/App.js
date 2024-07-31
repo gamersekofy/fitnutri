@@ -20,7 +20,7 @@ import WorkoutVideo from './WorkoutVideo';
 import NutriCommunity from './NutriCommunity';
 import Discussion from './Discussion';
 import FitnessAssesment from './FitnessAssesment';
-import AssesmentWorkout from './AssesmentWorkout';
+import AssessmentWorkout from './AssessmentWorkout';
 import Article from './Article';
 
 
@@ -50,7 +50,7 @@ function App() {
           <Route path="/Discussion" element={<Discussion />} />
           <Route path="/Article" element={<Article />} />
           <Route path="/FitnessAssesment" element={<FitnessAssesment />} />
-          <Route path="/AssesmentWorkout" element={<AssesmentWorkout />} />
+          <Route path="/AssessmentWorkout" element={<AssessmentWorkout />} />
         </Routes>
        <Footer />
       </div>

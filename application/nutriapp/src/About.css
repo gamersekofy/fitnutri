@@ -1,60 +1,66 @@
-About-body {
-            font-family: 'Verdana', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: rgb(188,238,174);
-            background: radial-gradient(circle, rgba(188,238,174,0.3) 0%, rgba(148,187,233,1) 100%);
-            color: #333;
-           
-        }
-        .About-container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
-            
-        }
-        .About-team-intro {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .About-team-members {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .About-team-member {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin: 20px;
-            padding: 20px;
-            flex: 1 1 300px;
-            max-width: 300px;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-decoration: none;
-            color: inherit;
-        }
-        .About-team-member:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        }
-        .About-team-member img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-        .About-team-member h3 {
-            margin-top: 10px;
-            color: #28a745;
-        }
-        .About-team-member p {
-            color: #777;
-        }
-        .About-team-member a {
-            text-decoration: none;
-            color: inherit;
-        }
+.About-headers {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
 
+.About-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
     
+}
+
+.About-team-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.About-team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.About-team-member {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.About-team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.About-team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.About-team-member h3 {
+    margin-top: 10px;
+    color: #28a745;
+}
+
+.About-team-member p {
+    color: #777;
+}
+
+.About-team-member a {
+    text-decoration: none;
+    color: inherit;
+}

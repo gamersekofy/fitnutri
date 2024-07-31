@@ -85,8 +85,8 @@ function SignUp() {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    firstName: formData.name,
-                    lastName: formData.name,
+                    firstName: formData.first_name,
+                    lastName: formData.last_name,
                     email: formData.email,
                     password: formData.password,
                     age: formData.age,  // Example static age

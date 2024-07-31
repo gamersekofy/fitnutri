@@ -5,10 +5,8 @@ import "./SignUp.css";
 function SignUp() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    // first_name: "Eduardo",
-    // last_name: "Munoz",
-    first_name: "Eduardo",
-    last_name: "Munoz",
+    first_name: "",
+    last_name: "",
     age: "",
     height: "",
     weight: "",
@@ -137,6 +135,15 @@ function SignUp() {
           id="age"
           name="age"
           value={formData.age}
+          onChange={handleChange}
+          required
+        />
+        <label htmlFor="dateOfBirth">Date of Birth</label>
+        <input
+          type="date"
+          id="dateOfBirth"
+          name="dateOfBirth"
+          value={formData.dateOfBirth}
           onChange={handleChange}
           required
         />

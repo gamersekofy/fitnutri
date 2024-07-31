@@ -121,12 +121,12 @@ function SignUp() {
         <div className="signup-container">
             <form className="signup-form" onSubmit={handleSubmit}>
                 <h2>Sign Up</h2>
-                <label htmlFor="name">First Name</label>
+                <label htmlFor="first_name">First Name</label>
                 <input
                     type="text"
-                    id="last_name"
-                    name="last_name"
-                    value={formData.last_name}
+                    id="first_name"
+                    name="first_name"
+                    value={formData.first_name}
                     onChange={handleChange}
                     required
                 />
@@ -139,7 +139,7 @@ function SignUp() {
                     onChange={handleChange}
                     required
                 />
-                <label htmlFor="name">Height</label>
+                <label htmlFor="height">Height</label>
                 <input
                     type="number"
                     id="height"
@@ -148,7 +148,8 @@ function SignUp() {
                     onChange={handleChange}
                     required
                 />
-                <label htmlFor="name">Age</label>
+                {errors.age && <p className="error">{errors.age}</p>}
+                <label htmlFor="age">Age</label>
                 <input
                     type="number"
                     id="age"
@@ -157,7 +158,7 @@ function SignUp() {
                     onChange={handleChange}
                     required
                 />
-                <label htmlFor="name">Weight</label>
+                <label htmlFor="weight">Weight</label>
                 <input
                     type="number"
                     id="weight"
@@ -197,7 +198,7 @@ function SignUp() {
                     required
                 />
                 {errors.confirmPassword && <p className="error">{errors.confirmPassword}</p>}
-                <button type="submit" onClick={handleSubmit}>Create Account</button>
+                <button type="submit">Create Account</button>
                 <div className='to-Login'>
                     <h5>Already have an account? <button onClick={handleNavigateToLogin}>Login</button></h5>
                 </div>

@@ -22,9 +22,12 @@ function HealthInfo() {
         termsAccepted: false
     });
     const [errors, setErrors] = useState({});
+    const [hasAgreedToTerms, setHasAgreedToTerms] = useState(false);
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
+        const updatedFormData = { ...formData, [name]: value };
+        const updatedErrors = { ...errors };
        
         if (type === 'number' && parseFloat(value) < 0) {
             setErrors({
@@ -125,6 +128,11 @@ function HealthInfo() {
             console.error('Validation failed:', errors);
             return;
         }
+        
+        if (!hasAgreedToTerms) {
+            alert("You must agree to the terms and conditions to register.");
+            return;
+          }
 
         // implmenting an API 
         fetch('/api/healthinfo', {
@@ -190,7 +198,7 @@ function HealthInfo() {
                         <option value="Balance">Balance Exercises</option>
                     </select>
                 {errors.weight && <p className="error">{errors.workoutTypes}</p>}
-            
+                
                 <div className="terms-container">
                     <label>
                         <div><input type="checkbox" name="termsAccepted" checked={formData.termsAccepted} onChange={handleChange}  /></div> 

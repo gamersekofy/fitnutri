@@ -1,0 +1,66 @@
+.signIn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .signIn-form {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+  }
+  
+  .signIn-form h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .signIn-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .signIn-form input[type="email"],
+  .signIn-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .signIn-form .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .signIn-form .password-reset-link {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #0066cc;
+  }
+  
+  .signIn-form .password-reset-link:hover {
+    text-decoration: underline;
+  }
+  
+  .signIn-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  

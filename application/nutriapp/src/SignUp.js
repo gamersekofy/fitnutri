@@ -17,17 +17,29 @@ function SignUp() {
     confirmPassword: "",
   });
   const [errors, setErrors] = useState({});
-
+  const [hasAgreedToTerms, setHasAgreedToTerms] = useState(false);
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value, type } = e.target;
+    const updatedFormData = { ...formData, [name]: value };
+    const updatedErrors = { ...errors };
+
+    if (type === 'number' && parseFloat(value) < 0) {
+      updatedErrors[name] = 'This field cannot have negative values.';
+    } else {
+      delete updatedErrors[name];
+    }
+
+    setFormData(updatedFormData);
+    setErrors(updatedErrors);
   };
 
   const validateForm = () => {
     let isValid = true;
     let newErrors = {};
+
+        const maxAge = 100; 
+        const maxHeight = 10; 
+        const maxWeight = 500; 
 
     if (!formData.first_name.trim()) {
       newErrors.first_name = "First name is required.";
@@ -42,10 +54,26 @@ function SignUp() {
     if (!formData.age.trim()) {
       newErrors.age = "Age is required";
       isValid = false;
-    } else if (Number(formData.age) < 13) {
-      newErrors.age = "You need to be at least 13 years or older.";
+    } else if (formData.age > maxAge) {
       isValid = false;
-    }
+      errors['age'] = `Age must be less than ${maxAge} Ib`;
+  }
+
+    if (!formData.height) {
+      isValid = false;
+      errors['height'] = 'Height is required';
+  } else if (formData.height > maxHeight) {
+      isValid = false;
+      errors['height'] = `Height must be less than ${maxHeight} ft`;
+  }
+
+  if (!formData.weight) {
+      isValid = false;
+      errors['weight'] = 'Weight is required';
+  } else if (formData.weight > maxWeight) {
+      isValid = false;
+      errors['weight'] = `Weight must be less than  than ${maxWeight} Ib`;
+  }
 
     if (!formData.email) {
       newErrors.email = "Email is required";
@@ -120,7 +148,6 @@ function SignUp() {
     e.preventDefault();
     navigate("/SignIn");
   };
-
   return (
     <div class="signup-container">
       <form class="signup-form" onSubmit={handleSubmit}>
@@ -152,6 +179,7 @@ function SignUp() {
           onChange={handleChange}
           required
         />
+         {errors.age && <p className="error">{errors.age}</p>}
         <label htmlFor="dateOfBirth">Date of Birth</label>
         <input
           type="date"
@@ -171,6 +199,7 @@ function SignUp() {
           onChange={handleChange}
           required
         />
+        {errors.height && <p className="error">{errors.height}</p>}
         <label htmlFor="weight">Weight</label>
         <input
           type="number"
@@ -180,6 +209,7 @@ function SignUp() {
           onChange={handleChange}
           required
         />
+        {errors.weight && <p className="error">{errors.weight}</p>}
         <label htmlFor="email">Email</label>
         <input
           type="email"
@@ -212,6 +242,17 @@ function SignUp() {
         {errors.confirmPassword && (
           <p className="error">{errors.confirmPassword}</p>
         )}
+
+        <label>
+          <input
+            type="checkbox"
+            checked={hasAgreedToTerms}
+            onChange={e => setHasAgreedToTerms(e.target.checked)}
+          />
+          I agree to the Terms and Conditions
+        </label>
+        {!hasAgreedToTerms && <p className="error">You must agree to the terms.</p>}
+
         <button type="submit">Create Account</button>
         <div className="to-Login">
           <h5>

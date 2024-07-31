@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './SignUp.css';
+import './SignIn.css';
 
 function SignIn() {
   const navigate = useNavigate();
@@ -77,8 +77,8 @@ function SignIn() {
   };
 
   return (
-    <div className="signup-container">
-      <form className="signup-form" onSubmit={handleSubmit}>
+    <div className="signIn-container">
+      <form className="signIn-form" onSubmit={handleSubmit}>
         <h2>Log In</h2>
         <label htmlFor="email">Email</label>
         <input

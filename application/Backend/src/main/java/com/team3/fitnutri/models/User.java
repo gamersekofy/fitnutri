@@ -13,28 +13,14 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @NotNull
-    @Size(min = 1, max = 50)
     private String first_name;
-
-    @Size(min = 1, max = 50)
     private String last_name;
-
-    @NotNull
-    @Email
     private String email;
-
-    @NotNull
-    @Min(13)
     private Integer age;
     private LocalDate dateOfBirth;
     private double weight;
     private double height;
     private String gender;
-
-    @NotNull
-    @Size(min = 8)
     private String password;
 
     public User() {

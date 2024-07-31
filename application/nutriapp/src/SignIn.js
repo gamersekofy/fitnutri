@@ -53,6 +53,7 @@ function SignIn() {
       // API call to log in the user
       fetch('http://localhost:8080/user/login', {
         method: 'POST',
+        mode: 'cors',
         headers: {
             'Content-Type': 'application/json'
         },

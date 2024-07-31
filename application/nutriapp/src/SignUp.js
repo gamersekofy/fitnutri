@@ -58,9 +58,10 @@ function SignUp() {
 
         if (validateForm()) {
             console.log('Form Data Submitted:', formData);
-            // example of an API call to register user
+            
             fetch('http://localhost:8080/user/createUser', {
                 method: 'POST',
+                mode: 'cors',
                 headers: {
                     'Content-Type': 'application/json'
                 },

@@ -85,8 +85,10 @@ function SignUp() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          firstName: formData.first_name,
-          lastName: formData.last_name,
+        //   firstName: formData.first_name,
+        //   lastName: formData.last_name,
+          firstName: "Eduardo",
+          lastName: "Munoz",
           email: formData.email,
           password: formData.password,
           age: formData.age, // Example static age
@@ -121,7 +123,7 @@ function SignUp() {
     <div class="signup-container">
       <form class="signup-form" onSubmit={handleSubmit}>
         <h2>Sign Up</h2>
-        <label htmlFor="first_name">First Name</label>
+        {/* <label htmlFor="first_name">First Name</label>
         <input
           type="text"
           id="first_name"
@@ -130,7 +132,6 @@ function SignUp() {
           onChange={handleChange}
           required
         />
-        {errors.first_name && <p className="error">{errors.first_name}</p>}
         <label htmlFor="last_name">Last Name</label>
         <input
           type="text"
@@ -139,8 +140,7 @@ function SignUp() {
           value={formData.last_name}
           onChange={handleChange}
           required
-        />
-        {errors.last_name && <p className="error">{errors.last_name}</p>}
+        /> */}
         <label htmlFor="age">Age</label>
         <input
           type="number"

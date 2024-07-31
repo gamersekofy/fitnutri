@@ -130,12 +130,12 @@ function SignUp() {
                     onChange={handleChange}
                     required
                 />
-                <label htmlFor="name">Last Name</label>
+                <label htmlFor="last_name">Last Name</label>
                 <input
-                    type="number"
-                    id="age"
-                    name="age"
-                    value={formData.age}
+                    type="text"
+                    id="last_name"
+                    name="last_name"
+                    value={formData.last_name}
                     onChange={handleChange}
                     required
                 />

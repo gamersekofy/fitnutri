@@ -31,12 +31,28 @@ public class UsersController {
         return ResponseEntity.ok(userService.findUserById(id));
     }
 
-
     @PostMapping("/createUser")
     public ResponseEntity<User> addUser(@Valid @RequestBody User user){
+        System.out.println("Received user: " + user);
+        System.out.println("First Name: " + user.getFirst_name());
+        System.out.println("Last Name: " + user.getLast_name());
+
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        return ResponseEntity.ok(userService.createUser(user));
+        User createdUser = userService.createUser(user);
+
+        System.out.println("Saved user: " + createdUser);
+        System.out.println("First Name (saved): " + createdUser.getFirst_name());
+        System.out.println("Last Name (saved): " + createdUser.getLast_name());
+
+        return ResponseEntity.ok(createdUser);
     }
+
+
+    // @PostMapping("/createUser")
+    // public ResponseEntity<User> addUser(@Valid @RequestBody User user){
+    //     user.setPassword(passwordEncoder.encode(user.getPassword()));
+    //     return ResponseEntity.ok(userService.createUser(user));
+    // }
 
     @PutMapping("/updateUser/{id}")
     public ResponseEntity<User> updateUser(@PathVariable Long id, @Valid @RequestBody User userData){

@@ -78,6 +78,20 @@ function SignUp() {
     if (validateForm()) {
       console.log("Form Data Submitted:", formData);
 
+      const formattedDateOfBirth = formData.dateOfBirth;
+
+      const payload = {
+        first_name: formData.first_name,
+        last_name: formData.last_name,
+        email: formData.email,
+        password: formData.password,
+        age: formData.age,
+        dateOfBirth: formattedDateOfBirth,
+        weight: formData.weight,
+        height: formData.height,
+        gender: formData.gender,
+      };
+
       fetch("http://13.57.220.69:8080/user/createUser", {
         method: "POST",
         mode: "cors",

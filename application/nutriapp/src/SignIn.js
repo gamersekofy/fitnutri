@@ -51,7 +51,7 @@ function SignIn() {
     if (validateForm()) {
       console.log('Form Data Submitted:', formData);
       // API call to log in the user
-      fetch('http://localhost:8080/user/login', {
+      fetch('http://13.57.220.69:8080/user/login', {
         method: 'POST',
         mode: 'cors',
         headers: {

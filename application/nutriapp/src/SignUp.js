@@ -58,26 +58,39 @@ function SignUp() {
 
         if (validateForm()) {
             console.log('Form Data Submitted:', formData);
-            
-            fetch('http://localhost:8080/user/createUser', {
+
+            fetch('http://13.57.220.69:8080/user/createUser', {
                 method: 'POST',
                 mode: 'cors',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(formData)
+                body: JSON.stringify({
+                    firstName: formData.name.split(' ')[0],
+                    lastName: formData.name.split(' ')[1],
+                    email: formData.email,
+                    password: formData.password,
+                    age: 30,  // Example static age
+                    dateOfBirth: '1993-01-01',  // Example static date of birth
+                    weight: 70.5,  // Example static weight
+                    height: 175.0,  // Example static height
+                    gender: 'male'  // Example static gender
+                })
             })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Registration successful:', data);
-                navigate('/'); 
-            })
-            .catch(error => {
-                console.error('Registration failed:', error);
-            });
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("HTTP error! status: ${response.status}");
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Registration successful:', data);
+                    navigate('/');
+                })
+                .catch(error => {
+                    console.error('Registration failed:', error);
+                });
         }
-
-        
     };
 
     const handleNavigateToLogin = (e) => {

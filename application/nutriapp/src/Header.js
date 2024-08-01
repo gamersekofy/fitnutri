@@ -14,8 +14,7 @@ function Header() {
       <img src="/Logo.png" alt="FitNutri" className="logo" />
 
       
-      {/* <nav className="nav-menu"> */}
-      <nav className={`nav-menu ${isMobileOpen ? 'open' : ''}`}>
+      <nav className="nav-menu">
         <Link to="/" className="nav-link" onClick={() => setIsMobileOpen(false)}>Home</Link>
         <Link to="/About" className="nav-link" onClick={() => setIsMobileOpen(false)}>About</Link>
         <Link to="/Contact" className="nav-link" onClick={() => setIsMobileOpen(false)}>Contact</Link>

@@ -76,6 +76,11 @@ function SignIn() {
     navigate('/forgot-password'); 
   };
 
+  const handleRedirectToSignUp = () => {
+    
+    navigate('/SignUp'); 
+  };
+
   return (
     <div className="signIn-container">
       <form className="signIn-form" onSubmit={handleSubmit}>
@@ -104,6 +109,9 @@ function SignIn() {
         
         <div className="password-reset-link" onClick={handleForgotPassword}>
           Forgot Password?
+        </div>
+        <div className="password-reset-link" onClick={handleRedirectToSignUp}>
+          Don't have an account? SIgn Up!
         </div>
         
         {errors.api && <div className="error">{errors.api}</div>}

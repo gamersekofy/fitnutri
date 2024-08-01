@@ -312,13 +312,13 @@ function Main() {
         <h2>Videos</h2>
         <div className="video-container">
           <div className="video-item">
-            <ReactPlayer url='https://www.youtube.com/watch?v=lrwMKkyU14k' playing width='100%' height='100%' />
+            <ReactPlayer url='https://www.youtube.com/watch?v=lrwMKkyU14k' playing={false} width='100%' height='100%' />
           </div>
           <div className="video-item">
-            <ReactPlayer url='https://www.youtube.com/watch?v=IT94xC35u6k' playing width='100%' height='100%' />
+            <ReactPlayer url='https://www.youtube.com/watch?v=IT94xC35u6k' playing={false} width='100%' height='100%' />
           </div>
           <div className="video-item">
-            <ReactPlayer url='https://www.youtube.com/watch?v=cGxJ79TbsAI&t=0s' playing width='100%' height='100%' />
+            <ReactPlayer url='https://www.youtube.com/watch?v=cGxJ79TbsAI&t=0s' playing={false} width='100%' height='100%' />
           </div>
         </div>
       </div>
